@@ -72,7 +72,7 @@ export default function Card3D({
           className="pointer-events-none absolute inset-0 rounded-[inherit] transition-opacity duration-300 z-30"
           style={{
             opacity: glarePosition.opacity,
-            background: `radial-gradient(circle at ${glarePosition.x}% ${glarePosition.y}%, rgba(251, 191, 36, 0.3) 0%, rgba(245, 158, 11, 0.1) 30%, transparent 65%)`,
+            background: `radial-gradient(circle at ${glarePosition.x}% ${glarePosition.y}%, rgba(96, 165, 250, 0.35) 0%, rgba(37, 99, 235, 0.15) 30%, transparent 65%)`,
           }}
         />
 

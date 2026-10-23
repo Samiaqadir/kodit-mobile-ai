@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0d1117;
+  --background: #060913;
   --foreground: #f8fafc;
-  --gold-primary: #f59e0b;
-  --gold-light: #fbbf24;
-  --gold-glow: rgba(245, 158, 11, 0.45);
+  --blue-primary: #2563eb;
+  --blue-dark: #1d4ed8;
+  --blue-light: #60a5fa;
+  --blue-glow: rgba(37, 99, 235, 0.45);
+  /* Fallback aliases for gold variables */
+  --gold-primary: #2563eb;
+  --gold-light: #60a5fa;
+  --gold-glow: rgba(37, 99, 235, 0.45);
 }
 
 @theme inline {
@@ -16,59 +21,61 @@
 }
 
 body {
-  background: #080b10;
+  background: #050811;
   color: #f8fafc;
   font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow-x: hidden;
-  selection-background-color: #f59e0b;
-  selection-color: #000000;
+  selection-background-color: #2563eb;
+  selection-color: #ffffff;
   scroll-behavior: smooth;
 }
 
 /* Glassmorphic Panels */
 .card-glass {
-  background: rgba(14, 18, 26, 0.78);
+  background: rgba(10, 16, 28, 0.82);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 25px rgba(245, 158, 11, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 25px rgba(37, 99, 235, 0.1);
 }
 
-/* Bento Card Styles with Golden Tinted Frosted Glass */
-.card-bento-gold {
-  background: linear-gradient(135deg, rgba(20, 24, 34, 0.8) 0%, rgba(12, 15, 22, 0.9) 100%);
+/* Bento Card Styles with Dark Blue Tinted Frosted Glass */
+.card-bento-gold,
+.card-bento-blue {
+  background: linear-gradient(135deg, rgba(14, 22, 38, 0.85) 0%, rgba(8, 13, 24, 0.92) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(245, 158, 11, 0.22);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(251, 191, 36, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(96, 165, 250, 0.18);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-bento-gold:hover {
-  border-color: rgba(245, 158, 11, 0.55);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(245, 158, 11, 0.18), inset 0 1px 2px rgba(251, 191, 36, 0.3);
+.card-bento-gold:hover,
+.card-bento-blue:hover {
+  border-color: rgba(96, 165, 250, 0.65);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(37, 99, 235, 0.3), inset 0 1px 2px rgba(147, 197, 253, 0.35);
   transform: translateY(-2px);
 }
 
 /* Workflow Step Cards */
 .card-workflow {
-  background: linear-gradient(180deg, rgba(22, 27, 38, 0.85) 0%, rgba(11, 14, 20, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(15, 24, 42, 0.88) 0%, rgba(7, 12, 22, 0.96) 100%);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(245, 158, 11, 0.25);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(251, 191, 36, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(96, 165, 250, 0.2);
   transition: all 0.35s ease;
 }
 
 .card-workflow:hover {
-  border-color: rgba(245, 158, 11, 0.65);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.22);
+  border-color: rgba(96, 165, 250, 0.75);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(37, 99, 235, 0.32);
   transform: translateY(-3px);
 }
 
 /* Tech Stack Logo Cards */
 .card-tech-logo {
-  background: rgba(14, 18, 25, 0.7);
+  background: rgba(11, 17, 30, 0.75);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -76,24 +83,27 @@ body {
 }
 
 .card-tech-logo:hover {
-  background: rgba(20, 26, 38, 0.9);
-  border-color: rgba(245, 158, 11, 0.5);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(245, 158, 11, 0.2);
+  background: rgba(16, 26, 48, 0.9);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(37, 99, 235, 0.28);
   transform: translateY(-2px);
 }
 
-.button-gold {
-  background: linear-gradient(180deg, #fcd34d 0%, #f59e0b 60%, #d97706 100%);
-  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+.button-gold,
+.button-blue {
+  background: linear-gradient(180deg, #3b82f6 0%, #2563eb 55%, #1d4ed8 100%);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  color: #ffffff;
 }
 
-.button-gold:hover {
-  box-shadow: 0 6px 28px rgba(245, 158, 11, 0.65), inset 0 1px 2px rgba(255, 255, 255, 0.7);
+.button-gold:hover,
+.button-blue:hover {
+  box-shadow: 0 6px 30px rgba(59, 130, 246, 0.7), inset 0 1px 2px rgba(255, 255, 255, 0.65);
   transform: translateY(-1px);
 }
 
 .button-outline-glass {
-  background: rgba(10, 14, 20, 0.5);
+  background: rgba(8, 13, 24, 0.5);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.22);
 }
@@ -104,29 +114,30 @@ body {
 }
 
 .button-nav-project {
-  background: rgba(20, 24, 32, 0.6);
+  background: rgba(15, 23, 42, 0.65);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(245, 158, 11, 0.45);
-  box-shadow: 0 0 15px rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
 }
 
 .button-nav-project:hover {
-  border-color: rgba(245, 158, 11, 0.8);
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+  border-color: rgba(96, 165, 250, 0.85);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.45);
 }
 
-.text-gold-glow {
-  text-shadow: 0 0 14px rgba(245, 158, 11, 0.6);
+.text-gold-glow,
+.text-blue-glow {
+  text-shadow: 0 0 16px rgba(59, 130, 246, 0.75);
 }
 
-/* Subtle Metallic Ripple Flow Background */
+/* Subtle Metallic Ripple Flow Background with Dark Blue Ambient Glows */
 .bg-metallic-ripples {
-  background-color: #080b10;
+  background-color: #050811;
   background-image: 
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(245, 158, 11, 0.08), transparent 70%),
-    radial-gradient(circle 600px at 80% 40%, rgba(217, 119, 6, 0.06), transparent 80%),
-    radial-gradient(circle 600px at 20% 70%, rgba(245, 158, 11, 0.06), transparent 80%),
-    radial-gradient(circle 700px at 50% 90%, rgba(217, 119, 6, 0.05), transparent 85%);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.12), transparent 70%),
+    radial-gradient(circle 600px at 80% 40%, rgba(29, 78, 216, 0.08), transparent 80%),
+    radial-gradient(circle 600px at 20% 70%, rgba(30, 58, 138, 0.1), transparent 80%),
+    radial-gradient(circle 700px at 50% 90%, rgba(37, 99, 235, 0.08), transparent 85%);
 }
 
 /* Animated Golden Pulse Line */
@@ -143,7 +154,7 @@ body {
 /* TEXT & OBJECT KEYFRAME ANIMATIONS (KODIT MOTION SYSTEM)                   */
 /* ========================================================================= */
 
-/* 1. Golden Text Shimmer Sweep */
+/* 1. Dark Blue / Sapphire Text Shimmer Sweep */
 @keyframes textShimmer {
   0% {
     background-position: -200% 0;
@@ -154,7 +165,7 @@ body {
 }
 
 .animate-shimmer-text {
-  background: linear-gradient(90deg, #ffffff 0%, #fbbf24 35%, #f59e0b 50%, #ffffff 70%, #d97706 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #93c5fd 35%, #3b82f6 50%, #ffffff 70%, #1d4ed8 100%);
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
@@ -162,8 +173,9 @@ body {
   animation: textShimmer 6s linear infinite;
 }
 
-.animate-shimmer-gold {
-  background: linear-gradient(90deg, #f59e0b 0%, #fef08a 35%, #fbbf24 50%, #f59e0b 70%, #b45309 100%);
+.animate-shimmer-gold,
+.animate-shimmer-blue {
+  background: linear-gradient(90deg, #3b82f6 0%, #bfdbfe 35%, #60a5fa 50%, #2563eb 70%, #1e40af 100%);
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
@@ -198,15 +210,15 @@ body {
   animation: floatReverse 7s ease-in-out infinite;
 }
 
-/* 3. Breathing Amber Border Glow */
+/* 3. Breathing Deep Blue Border Glow */
 @keyframes pulseGlow {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(245, 158, 11, 0.15), inset 0 0 10px rgba(245, 158, 11, 0.05);
-    border-color: rgba(245, 158, 11, 0.3);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2), inset 0 0 10px rgba(37, 99, 235, 0.08);
+    border-color: rgba(59, 130, 246, 0.35);
   }
   50% {
-    box-shadow: 0 0 35px rgba(245, 158, 11, 0.4), inset 0 0 18px rgba(245, 158, 11, 0.15);
-    border-color: rgba(251, 191, 36, 0.7);
+    box-shadow: 0 0 35px rgba(59, 130, 246, 0.5), inset 0 0 18px rgba(37, 99, 235, 0.2);
+    border-color: rgba(96, 165, 250, 0.8);
   }
 }
 
@@ -292,12 +304,12 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #080b10;
+  background: #050811;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f293d;
+  background: #1e293b;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b;
+  background: #2563eb;
 }

@@ -43,13 +43,13 @@ export default function ProjectEstimator({
     <section className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/5">
       {/* Section Header */}
       <div className="flex flex-col items-center text-center space-y-3 mb-12 sm:mb-16">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.2)]">
-          <Sliders className="w-3.5 h-3.5 text-amber-400" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-500/10 border border-blue-500/30 text-blue-300 shadow-[0_0_12px_rgba(37,99,235,0.25)]">
+          <Sliders className="w-3.5 h-3.5 text-blue-400" />
           <span>Interactive Project Calculator</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl lg:text-[50px] font-extrabold tracking-tight leading-tight animate-shimmer-text">
-          Configure Your <span className="animate-shimmer-gold">Mobile App &amp; AI</span> Architecture
+          Configure Your <span className="animate-shimmer-blue">Mobile App &amp; AI</span> Architecture
         </h2>
 
         <p className="text-sm sm:text-base text-zinc-300 max-w-2xl font-normal leading-relaxed">
@@ -62,23 +62,23 @@ export default function ProjectEstimator({
         <div className="lg:col-span-7 space-y-6">
           {/* 1. Platform Selection */}
           <div className="space-y-3">
-            <label className="text-xs font-mono text-amber-400 uppercase tracking-widest flex items-center gap-2">
+            <label className="text-xs font-mono text-blue-400 uppercase tracking-widest flex items-center gap-2">
               <Smartphone className="w-3.5 h-3.5" />
               <span>1. Target Mobile Operating Systems</span>
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
-                { id: "both", title: "iOS & Android", sub: "React Native / Flutter" },
-                { id: "ios", title: "iOS Native", sub: "Swift / SwiftUI" },
-                { id: "android", title: "Android Native", sub: "Kotlin / Jetpack" },
+                { id: "both" as const, title: "iOS & Android", sub: "React Native / Flutter" },
+                { id: "ios" as const, title: "iOS Native", sub: "Swift / SwiftUI" },
+                { id: "android" as const, title: "Android Native", sub: "Kotlin / Jetpack" },
               ].map((p) => (
                 <button
                   key={p.id}
-                  onClick={() => setPlatform(p.id as any)}
+                  onClick={() => setPlatform(p.id)}
                   className={`p-4 rounded-2xl border text-left font-mono transition-all ${
                     platform === p.id
-                      ? "bg-amber-500/15 border-amber-400 text-white shadow-[0_0_15px_rgba(245,158,11,0.25)]"
-                      : "bg-black/50 border-white/10 text-zinc-400 hover:border-amber-500/40"
+                      ? "bg-blue-600/20 border-blue-400 text-white shadow-[0_0_18px_rgba(37,99,235,0.35)]"
+                      : "bg-black/50 border-white/10 text-zinc-400 hover:border-blue-500/40"
                   }`}
                 >
                   <div className="font-bold text-sm text-white mb-1">{p.title}</div>
@@ -90,40 +90,40 @@ export default function ProjectEstimator({
 
           {/* 2. AI Intelligence Tier */}
           <div className="space-y-3">
-            <label className="text-xs font-mono text-amber-400 uppercase tracking-widest flex items-center gap-2">
+            <label className="text-xs font-mono text-blue-400 uppercase tracking-widest flex items-center gap-2">
               <Brain className="w-3.5 h-3.5" />
               <span>2. Artificial Intelligence Integration</span>
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 {
-                  id: "agents",
+                  id: "agents" as const,
                   title: "Autonomous Agent Swarms",
                   desc: "Multi-agent tool calling, auto-recovery & 24/7 self-operating workflows.",
                 },
                 {
-                  id: "rag",
+                  id: "rag" as const,
                   title: "Enterprise Vector RAG",
                   desc: "Private domain LLM fine-tuning, Pinecone/pgvector semantic search.",
                 },
                 {
-                  id: "ondevice",
+                  id: "ondevice" as const,
                   title: "On-Device CoreML / NPU",
                   desc: "Sub-millisecond edge vision & local neural processing without internet.",
                 },
                 {
-                  id: "basic",
+                  id: "basic" as const,
                   title: "Smart Conversational AI",
                   desc: "Context-aware chatbots, multi-modal voice API streaming & TTS.",
                 },
               ].map((ai) => (
                 <button
                   key={ai.id}
-                  onClick={() => setAiTier(ai.id as any)}
+                  onClick={() => setAiTier(ai.id)}
                   className={`p-4 rounded-2xl border text-left font-mono transition-all ${
                     aiTier === ai.id
-                      ? "bg-amber-500/15 border-amber-400 text-white shadow-[0_0_15px_rgba(245,158,11,0.25)]"
-                      : "bg-black/50 border-white/10 text-zinc-400 hover:border-amber-500/40"
+                      ? "bg-blue-600/20 border-blue-400 text-white shadow-[0_0_18px_rgba(37,99,235,0.35)]"
+                      : "bg-black/50 border-white/10 text-zinc-400 hover:border-blue-500/40"
                   }`}
                 >
                   <div className="font-bold text-sm text-white mb-1">{ai.title}</div>
@@ -135,7 +135,7 @@ export default function ProjectEstimator({
 
           {/* 3. Delivery Speed */}
           <div className="space-y-3">
-            <label className="text-xs font-mono text-amber-400 uppercase tracking-widest flex items-center gap-2">
+            <label className="text-xs font-mono text-blue-400 uppercase tracking-widest flex items-center gap-2">
               <Clock className="w-3.5 h-3.5" />
               <span>3. Engineering Sprint Velocity</span>
             </label>
@@ -144,13 +144,13 @@ export default function ProjectEstimator({
                 onClick={() => setTimeline("rapid")}
                 className={`p-4 rounded-2xl border text-left font-mono transition-all ${
                   timeline === "rapid"
-                    ? "bg-amber-500/15 border-amber-400 text-white shadow-[0_0_15px_rgba(245,158,11,0.25)]"
-                    : "bg-black/50 border-white/10 text-zinc-400 hover:border-amber-500/40"
+                    ? "bg-blue-600/20 border-blue-400 text-white shadow-[0_0_18px_rgba(37,99,235,0.35)]"
+                    : "bg-black/50 border-white/10 text-zinc-400 hover:border-blue-500/40"
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-bold text-sm text-white">Rapid MVP Deployment</span>
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300">Fast Track</span>
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">Fast Track</span>
                 </div>
                 <div className="text-[10px] text-zinc-400">4-6 Weeks // 3 Agile Sprints to App Store</div>
               </button>
@@ -159,8 +159,8 @@ export default function ProjectEstimator({
                 onClick={() => setTimeline("standard")}
                 className={`p-4 rounded-2xl border text-left font-mono transition-all ${
                   timeline === "standard"
-                    ? "bg-amber-500/15 border-amber-400 text-white shadow-[0_0_15px_rgba(245,158,11,0.25)]"
-                    : "bg-black/50 border-white/10 text-zinc-400 hover:border-amber-500/40"
+                    ? "bg-blue-600/20 border-blue-400 text-white shadow-[0_0_18px_rgba(37,99,235,0.35)]"
+                    : "bg-black/50 border-white/10 text-zinc-400 hover:border-blue-500/40"
                 }`}
               >
                 <div className="flex items-center justify-between mb-1">
@@ -176,10 +176,10 @@ export default function ProjectEstimator({
         {/* RIGHT COLUMN: Real-Time Summary & Architecture Blueprint Card */}
         <div className="lg:col-span-5">
           <Card3D intensity={12}>
-            <div className="card-glass rounded-3xl p-6 sm:p-8 border border-amber-500/40 shadow-[0_0_50px_rgba(245,158,11,0.25)] relative overflow-hidden space-y-5 animate-pulse-glow">
+            <div className="card-glass rounded-3xl p-6 sm:p-8 border border-blue-500/40 shadow-[0_0_50px_rgba(37,99,235,0.25)] relative overflow-hidden space-y-5 animate-pulse-glow">
               <div className="flex items-center justify-between pb-3 border-b border-white/10">
-                <span className="text-xs font-mono text-amber-400 uppercase tracking-widest font-bold">
-                  // ESTIMATED ARCHITECTURE
+                <span className="text-xs font-mono text-blue-400 uppercase tracking-widest font-bold">
+                  {"// ESTIMATED ARCHITECTURE"}
                 </span>
                 <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
                   Sprint Ready
@@ -195,7 +195,7 @@ export default function ProjectEstimator({
 
                 <div className="p-3 rounded-xl bg-black/60 border border-white/5 space-y-1">
                   <span className="text-[10px] text-zinc-400 block">AI INTELLIGENCE ENGINE:</span>
-                  <span className="font-bold text-amber-300 text-sm">{aiLabels[aiTier]}</span>
+                  <span className="font-bold text-blue-300 text-sm">{aiLabels[aiTier]}</span>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2 text-center">
@@ -205,7 +205,7 @@ export default function ProjectEstimator({
                   </div>
                   <div className="p-3 rounded-xl bg-black/60 border border-white/5">
                     <span className="text-[10px] text-zinc-400 block">VELOCITY</span>
-                    <span className="font-bold text-amber-400 text-base">{sprintCount}</span>
+                    <span className="font-bold text-blue-400 text-base">{sprintCount}</span>
                   </div>
                 </div>
               </div>
@@ -213,19 +213,19 @@ export default function ProjectEstimator({
               {/* Key Deliverables Included */}
               <div className="space-y-1.5 pt-2 border-t border-white/10 text-[11px] font-mono text-zinc-300">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                   <span>60/120 FPS Native Hardware Acceleration</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                   <span>Biometric Secure Enclave Authentication</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                   <span>Full CI/CD Pipeline to iOS &amp; Android Stores</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                   <span>24/7 SLA Telemetry &amp; Autonomous Agent Monitoring</span>
                 </div>
               </div>
@@ -240,7 +240,7 @@ export default function ProjectEstimator({
                       timeline: weeks,
                     })
                   }
-                  className="w-full py-4 rounded-2xl font-bold text-sm button-gold text-black flex items-center justify-center shadow-xl tracking-wide transition-all"
+                  className="w-full py-4 rounded-2xl font-bold text-sm button-gold text-white flex items-center justify-center shadow-xl tracking-wide transition-all"
                 >
                   <span>Schedule Technical Discovery</span>
                 </button>

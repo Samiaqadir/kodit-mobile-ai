@@ -97,13 +97,13 @@ export default function MobileAISimulator({
     <section className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/5">
       {/* Section Header */}
       <div className="flex flex-col items-center text-center space-y-3 mb-12 sm:mb-16">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.2)]">
-          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-500/10 border border-blue-500/30 text-blue-300 shadow-[0_0_12px_rgba(37,99,235,0.25)]">
+          <Sparkles className="w-3.5 h-3.5 text-blue-400" />
           <span>Interactive Mobile &amp; AI Laboratory</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl lg:text-[52px] font-extrabold tracking-tight leading-tight animate-shimmer-text">
-          Where <span className="animate-shimmer-gold">Mobile Performance</span> Meets{" "}
+          Where <span className="animate-shimmer-blue">Mobile Performance</span> Meets{" "}
           <span className="text-white">Neural Intelligence</span>
         </h2>
 
@@ -121,7 +121,7 @@ export default function MobileAISimulator({
               onClick={() => setActiveMode("fintech")}
               className={`px-4 py-1.5 rounded-full text-xs font-mono transition-all flex items-center gap-1.5 ${
                 activeMode === "fintech"
-                  ? "bg-amber-400 text-black font-bold shadow-[0_0_15px_rgba(245,158,11,0.5)]"
+                  ? "bg-blue-600 text-white font-bold shadow-[0_0_15px_rgba(37,99,235,0.6)]"
                   : "text-zinc-400 hover:text-white"
               }`}
             >
@@ -132,7 +132,7 @@ export default function MobileAISimulator({
               onClick={() => setActiveMode("health")}
               className={`px-4 py-1.5 rounded-full text-xs font-mono transition-all flex items-center gap-1.5 ${
                 activeMode === "health"
-                  ? "bg-amber-400 text-black font-bold shadow-[0_0_15px_rgba(245,158,11,0.5)]"
+                  ? "bg-blue-600 text-white font-bold shadow-[0_0_15px_rgba(37,99,235,0.6)]"
                   : "text-zinc-400 hover:text-white"
               }`}
             >
@@ -143,7 +143,7 @@ export default function MobileAISimulator({
               onClick={() => setActiveMode("agent")}
               className={`px-4 py-1.5 rounded-full text-xs font-mono transition-all flex items-center gap-1.5 ${
                 activeMode === "agent"
-                  ? "bg-amber-400 text-black font-bold shadow-[0_0_15px_rgba(245,158,11,0.5)]"
+                  ? "bg-blue-600 text-white font-bold shadow-[0_0_15px_rgba(37,99,235,0.6)]"
                   : "text-zinc-400 hover:text-white"
               }`}
             >
@@ -154,20 +154,20 @@ export default function MobileAISimulator({
 
           {/* 3D Mobile Device Chassis */}
           <Card3D intensity={14} className="w-full max-w-[340px]">
-            <div className="relative w-full rounded-[44px] p-3.5 bg-gradient-to-b from-zinc-700 via-zinc-900 to-black border-2 border-amber-500/40 shadow-[0_25px_80px_rgba(0,0,0,0.9),0_0_35px_rgba(245,158,11,0.25)]">
+            <div className="relative w-full rounded-[44px] p-3.5 bg-gradient-to-b from-zinc-700 via-zinc-900 to-black border-2 border-blue-500/40 shadow-[0_25px_80px_rgba(0,0,0,0.9),0_0_35px_rgba(37,99,235,0.25)]">
               {/* Dynamic Island / Speaker Notch */}
               <div className="absolute top-6 inset-x-0 mx-auto w-28 h-5 bg-black rounded-full z-30 flex items-center justify-between px-3 border border-white/10">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="w-2 h-2 rounded-full bg-amber-400/80" />
+                <span className="w-2 h-2 rounded-full bg-blue-400/80" />
               </div>
 
               {/* Inner Screen */}
-              <div className="relative w-full aspect-[9/19] rounded-[36px] bg-[#070a0f] overflow-hidden flex flex-col justify-between p-4 pt-10 text-white select-none border border-white/5">
+              <div className="relative w-full aspect-[9/19] rounded-[36px] bg-[#050811] overflow-hidden flex flex-col justify-between p-4 pt-10 text-white select-none border border-white/5">
                 {/* Status Bar */}
                 <div className="flex items-center justify-between text-[10px] font-mono text-zinc-400 pb-2">
                   <span>9:41</span>
                   <div className="flex items-center gap-1.5 text-zinc-300">
-                    <Wifi className="w-3 h-3 text-amber-400" />
+                    <Wifi className="w-3 h-3 text-blue-400" />
                     <span>5G</span>
                     <Battery className="w-3.5 h-3.5 text-emerald-400" />
                   </div>
@@ -179,7 +179,7 @@ export default function MobileAISimulator({
                     <div className="flex items-center justify-between">
                       <div>
                         <span className="text-[10px] font-mono text-zinc-400 block">TOTAL PORTFOLIO</span>
-                        <span className="text-2xl font-bold font-mono text-amber-300 text-gold-glow">$148,920.40</span>
+                        <span className="text-2xl font-bold font-mono text-blue-300 text-blue-glow">$148,920.40</span>
                       </div>
                       <span className="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-[10px] font-mono">
                         +14.8% APY
@@ -194,8 +194,8 @@ export default function MobileAISimulator({
                           style={{ height: `${val}%` }}
                           className={`flex-1 rounded-t-[1px] transition-all duration-300 ${
                             i >= 6
-                              ? "bg-gradient-to-t from-amber-600 to-yellow-300 shadow-[0_0_8px_#f59e0b]"
-                              : "bg-gradient-to-t from-zinc-800 to-amber-700/60"
+                              ? "bg-gradient-to-t from-blue-700 to-sky-400 shadow-[0_0_8px_#3b82f6]"
+                              : "bg-gradient-to-t from-zinc-800 to-blue-900/60"
                           }`}
                         />
                       ))}
@@ -204,13 +204,13 @@ export default function MobileAISimulator({
                     {/* Biometric Trigger Card */}
                     <div
                       onClick={triggerScan}
-                      className="p-3 rounded-2xl bg-black/70 border border-amber-500/30 cursor-pointer hover:border-amber-400 transition-all text-center relative overflow-hidden"
+                      className="p-3 rounded-2xl bg-black/70 border border-blue-500/30 cursor-pointer hover:border-blue-400 transition-all text-center relative overflow-hidden"
                     >
                       {biometricScanning && (
-                        <div className="absolute inset-x-0 h-0.5 bg-amber-300 shadow-[0_0_10px_#fde047] animate-scan-line pointer-events-none" />
+                        <div className="absolute inset-x-0 h-0.5 bg-blue-400 shadow-[0_0_10px_#60a5fa] animate-scan-line pointer-events-none" />
                       )}
                       <div className="flex items-center justify-center gap-2 mb-1">
-                        <Fingerprint className={`w-5 h-5 ${biometricSuccess ? "text-emerald-400" : "text-amber-400 animate-pulse"}`} />
+                        <Fingerprint className={`w-5 h-5 ${biometricSuccess ? "text-emerald-400" : "text-blue-400 animate-pulse"}`} />
                         <span className="text-xs font-mono font-bold text-white">
                           {biometricScanning ? "Authenticating..." : biometricSuccess ? "Biometric Enclave OK" : "Touch Sensor"}
                         </span>
@@ -228,7 +228,7 @@ export default function MobileAISimulator({
                       </div>
                       <div className="flex justify-between items-center p-2 rounded-xl bg-white/[0.03] border border-white/5">
                         <span className="text-zinc-300">Arbitrage Execution</span>
-                        <span className="text-amber-300 font-bold">0.0024 BTC</span>
+                        <span className="text-blue-300 font-bold">0.0024 BTC</span>
                       </div>
                     </div>
                   </div>
@@ -262,10 +262,10 @@ export default function MobileAISimulator({
                     </div>
 
                     {/* Neural Diagnostic Card */}
-                    <div className="p-3 rounded-2xl bg-black/70 border border-amber-500/30 space-y-1">
+                    <div className="p-3 rounded-2xl bg-black/70 border border-blue-500/30 space-y-1">
                       <div className="flex items-center justify-between text-[10px] font-mono">
-                        <span className="text-amber-300 font-bold flex items-center gap-1">
-                          <Brain className="w-3.5 h-3.5 text-amber-400" />
+                        <span className="text-blue-300 font-bold flex items-center gap-1">
+                          <Brain className="w-3.5 h-3.5 text-blue-400" />
                           <span>On-Device CoreML Diagnosis</span>
                         </span>
                         <span className="text-emerald-400 font-bold">Optimal</span>
@@ -279,7 +279,7 @@ export default function MobileAISimulator({
                     <div className="grid grid-cols-2 gap-2 text-center font-mono text-[9px]">
                       <div className="p-2 rounded-xl bg-white/[0.03] border border-white/5">
                         <span className="text-zinc-500 block">HRV Score</span>
-                        <span className="text-amber-300 font-bold text-xs">94 ms</span>
+                        <span className="text-blue-300 font-bold text-xs">94 ms</span>
                       </div>
                       <div className="p-2 rounded-xl bg-white/[0.03] border border-white/5">
                         <span className="text-zinc-500 block">Sleep Cycle</span>
@@ -294,22 +294,22 @@ export default function MobileAISimulator({
                     <div className="flex items-center justify-between">
                       <div>
                         <span className="text-[10px] font-mono text-zinc-400 block">AUTONOMOUS RUNNER</span>
-                        <span className="text-lg font-bold font-mono text-amber-300">Agent Matrix // v4</span>
+                        <span className="text-lg font-bold font-mono text-blue-300">Agent Matrix // v4</span>
                       </div>
-                      <span className="px-2 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-[10px] font-mono">
+                      <span className="px-2 py-0.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-[10px] font-mono">
                         3 Swarms Live
                       </span>
                     </div>
 
                     {/* Task Progress */}
-                    <div className="p-3 rounded-2xl bg-black/60 border border-amber-500/20 space-y-2 font-mono text-[9px]">
+                    <div className="p-3 rounded-2xl bg-black/60 border border-blue-500/20 space-y-2 font-mono text-[9px]">
                       <div className="flex items-center justify-between text-zinc-300 border-b border-white/5 pb-1">
                         <span>Invoice Automation</span>
                         <span className="text-emerald-400">100% Executed</span>
                       </div>
                       <div className="flex items-center justify-between text-zinc-300 border-b border-white/5 pb-1">
                         <span>CRM Lead Enrichment</span>
-                        <span className="text-amber-300">Loop Active</span>
+                        <span className="text-blue-300">Loop Active</span>
                       </div>
                       <div className="flex items-center justify-between text-zinc-300">
                         <span>Database Vector Mesh</span>
@@ -318,8 +318,8 @@ export default function MobileAISimulator({
                     </div>
 
                     {/* Swarm Telemetry */}
-                    <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-400/30 text-center">
-                      <span className="text-[9px] font-mono text-amber-300 block font-bold">
+                    <div className="p-2.5 rounded-xl bg-blue-500/10 border border-blue-400/30 text-center">
+                      <span className="text-[9px] font-mono text-blue-300 block font-bold">
                         Self-Optimizing Architecture
                       </span>
                       <span className="text-[8px] font-mono text-zinc-400">
@@ -331,7 +331,7 @@ export default function MobileAISimulator({
 
                 {/* Bottom App Navigation Bar */}
                 <div className="pt-2 border-t border-white/10 flex items-center justify-around text-zinc-500">
-                  <div className="p-1 text-amber-400">
+                  <div className="p-1 text-blue-400">
                     <Smartphone className="w-4 h-4" />
                   </div>
                   <div className="p-1 hover:text-white transition-colors">
@@ -349,8 +349,8 @@ export default function MobileAISimulator({
         {/* RIGHT COLUMN: Live AI Intelligence Playground */}
         <div className="lg:col-span-6 space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-mono text-amber-400 uppercase tracking-widest block">
-              // ON-DEVICE &amp; CLOUD AI REASONING
+            <span className="text-xs font-mono text-blue-400 uppercase tracking-widest block">
+              {"// ON-DEVICE & CLOUD AI REASONING"}
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
               Test Our Autonomous AI Intelligence Pipelines
@@ -368,28 +368,28 @@ export default function MobileAISimulator({
                 onClick={() => runAIGenerator(idx)}
                 className={`p-3 rounded-2xl border text-left font-mono text-xs transition-all flex-1 ${
                   selectedPromptIdx === idx
-                    ? "bg-amber-500/15 border-amber-400 text-white shadow-[0_0_15px_rgba(245,158,11,0.25)]"
-                    : "bg-black/40 border-white/10 text-zinc-400 hover:border-amber-500/40"
+                    ? "bg-blue-600/20 border-blue-400 text-white shadow-[0_0_15px_rgba(37,99,235,0.35)]"
+                    : "bg-black/40 border-white/10 text-zinc-400 hover:border-blue-500/40"
                 }`}
               >
-                <div className="font-bold text-amber-300 mb-0.5">{p.title}</div>
+                <div className="font-bold text-blue-300 mb-0.5">{p.title}</div>
                 <div className="text-[10px] text-zinc-400 line-clamp-1">{p.prompt}</div>
               </button>
             ))}
           </div>
 
           {/* Terminal Code / Execution Window */}
-          <div className="rounded-3xl p-5 bg-black/80 border border-amber-500/30 shadow-2xl font-mono relative overflow-hidden">
+          <div className="rounded-3xl p-5 bg-black/80 border border-blue-500/30 shadow-2xl font-mono relative overflow-hidden">
             {/* Terminal Window Header */}
             <div className="flex items-center justify-between pb-3 border-b border-white/10 text-[11px] text-zinc-400">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80 inline-block" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
+                <span className="w-2.5 h-2.5 rounded-full bg-blue-500/80 inline-block" />
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
                 <span className="text-zinc-300 pl-2 font-bold">kodit-ai-runtime.sh</span>
               </div>
               <div className="flex items-center gap-3 text-[10px]">
-                <span className="text-amber-400">{samplePrompts[selectedPromptIdx].tokens}</span>
+                <span className="text-blue-400">{samplePrompts[selectedPromptIdx].tokens}</span>
                 <span className="text-emerald-400">{samplePrompts[selectedPromptIdx].latency}</span>
               </div>
             </div>
@@ -399,19 +399,19 @@ export default function MobileAISimulator({
               <div className="text-zinc-500">
                 $ kodit-agent-eval --mode=&quot;{samplePrompts[selectedPromptIdx].title}&quot;
               </div>
-              <p className="text-amber-300/90 text-[11px] leading-relaxed">
+              <p className="text-blue-300/90 text-[11px] leading-relaxed">
                 &gt; &quot;{samplePrompts[selectedPromptIdx].prompt}&quot;
               </p>
               <pre className="text-emerald-400 font-mono text-[11px] leading-relaxed whitespace-pre-line pt-2">
                 {streamedText}
-                {isGenerating && <span className="inline-block w-2 h-3 bg-amber-400 ml-1 animate-pulse" />}
+                {isGenerating && <span className="inline-block w-2 h-3 bg-blue-400 ml-1 animate-pulse" />}
               </pre>
             </div>
 
             {/* Bottom Status */}
             <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-between text-[10px] text-zinc-500">
               <span>Status: Online // SOC2 Certified</span>
-              <span className="text-amber-400">Autonomous Ready</span>
+              <span className="text-blue-400">Autonomous Ready</span>
             </div>
           </div>
 
@@ -419,7 +419,7 @@ export default function MobileAISimulator({
           <div className="pt-2">
             <button
               onClick={() => onSelectProject("Custom Mobile App & AI Architecture")}
-              className="w-full sm:w-auto px-8 py-3.5 rounded-full button-gold text-black font-bold text-xs tracking-wide shadow-xl transition-all"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-full button-gold text-white font-bold text-xs tracking-wide shadow-xl transition-all"
             >
               <span>Build This Mobile &amp; AI Solution</span>
             </button>

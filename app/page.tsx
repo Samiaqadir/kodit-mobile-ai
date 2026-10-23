@@ -44,7 +44,6 @@ import MobileAISimulator from "./components/MobileAISimulator";
 import ProjectEstimator from "./components/ProjectEstimator";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import FAQSection from "./components/FAQSection";
-import SoundToggle from "./components/SoundToggle";
 
 export default function KoditHomePage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -153,7 +152,7 @@ export default function KoditHomePage() {
       cat: "Native Apple Mobile",
       badge: "120 FPS Metal",
       icon: (
-        <div className="w-7 h-7 rounded-md border border-amber-500/50 flex items-center justify-center font-bold text-xs text-amber-300 bg-amber-500/10">
+        <div className="w-7 h-7 rounded-md border border-blue-600/50 flex items-center justify-center font-bold text-xs text-blue-300 bg-blue-600/10">
           iOS
         </div>
       ),
@@ -163,7 +162,7 @@ export default function KoditHomePage() {
       cat: "Native Google Mobile",
       badge: "Jetpack Compose",
       icon: (
-        <div className="w-7 h-7 rounded-md border border-amber-500/50 flex items-center justify-center font-bold text-xs text-amber-400 bg-amber-500/10">
+        <div className="w-7 h-7 rounded-md border border-blue-600/50 flex items-center justify-center font-bold text-xs text-blue-400 bg-blue-600/10">
           KT
         </div>
       ),
@@ -174,10 +173,10 @@ export default function KoditHomePage() {
       badge: "Native C++ Bridge",
       icon: (
         <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="16" cy="16" rx="4" ry="12" stroke="#f59e0b" strokeWidth="1.8" transform="rotate(30 16 16)" />
-          <ellipse cx="16" cy="16" rx="4" ry="12" stroke="#fbbf24" strokeWidth="1.8" transform="rotate(90 16 16)" />
-          <ellipse cx="16" cy="16" rx="4" ry="12" stroke="#f59e0b" strokeWidth="1.8" transform="rotate(150 16 16)" />
-          <circle cx="16" cy="16" r="2.2" fill="#fbbf24" />
+          <ellipse cx="16" cy="16" rx="4" ry="12" stroke="#2563eb" strokeWidth="1.8" transform="rotate(30 16 16)" />
+          <ellipse cx="16" cy="16" rx="4" ry="12" stroke="#60a5fa" strokeWidth="1.8" transform="rotate(90 16 16)" />
+          <ellipse cx="16" cy="16" rx="4" ry="12" stroke="#2563eb" strokeWidth="1.8" transform="rotate(150 16 16)" />
+          <circle cx="16" cy="16" r="2.2" fill="#60a5fa" />
         </svg>
       ),
     },
@@ -186,7 +185,7 @@ export default function KoditHomePage() {
       cat: "Multi-Platform UI",
       badge: "Skia 120 FPS",
       icon: (
-        <div className="w-7 h-7 rounded border border-amber-500/50 flex items-center justify-center font-bold text-xs text-amber-400 bg-amber-500/10">
+        <div className="w-7 h-7 rounded border border-blue-600/50 flex items-center justify-center font-bold text-xs text-blue-400 bg-blue-600/10">
           FL
         </div>
       ),
@@ -196,7 +195,7 @@ export default function KoditHomePage() {
       cat: "On-Device Neural",
       badge: "Sub-0.4ms Latency",
       icon: (
-        <div className="w-7 h-7 rounded-full border border-amber-400/60 flex items-center justify-center font-bold text-xs text-amber-300 bg-amber-500/15 shadow-[0_0_10px_rgba(245,158,11,0.4)]">
+        <div className="w-7 h-7 rounded-full border border-blue-400/60 flex items-center justify-center font-bold text-xs text-blue-300 bg-blue-600/15 shadow-[0_0_10px_rgba(37, 99, 235,0.4)]">
           NPU
         </div>
       ),
@@ -206,7 +205,7 @@ export default function KoditHomePage() {
       cat: "LangChain / Multi-Agent",
       badge: "Self-Operating",
       icon: (
-        <div className="w-7 h-7 rounded-md border border-amber-400/60 flex items-center justify-center font-bold text-xs text-amber-300 bg-amber-500/10">
+        <div className="w-7 h-7 rounded-md border border-blue-400/60 flex items-center justify-center font-bold text-xs text-blue-300 bg-blue-600/10">
           AI
         </div>
       ),
@@ -217,8 +216,8 @@ export default function KoditHomePage() {
       badge: "Semantic Search",
       icon: (
         <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 6C11 6 8 9 8 13C8 18 12 21 16 26C20 21 24 18 24 13C24 9 21 6 16 6Z" stroke="#fbbf24" strokeWidth="1.8" strokeLinejoin="round" />
-          <circle cx="16" cy="12" r="2.5" fill="#f59e0b" />
+          <path d="M16 6C11 6 8 9 8 13C8 18 12 21 16 26C20 21 24 18 24 13C24 9 21 6 16 6Z" stroke="#60a5fa" strokeWidth="1.8" strokeLinejoin="round" />
+          <circle cx="16" cy="12" r="2.5" fill="#2563eb" />
         </svg>
       ),
     },
@@ -313,8 +312,8 @@ export default function KoditHomePage() {
   ];
 
   return (
-    <div className="min-h-screen w-full bg-[#080b10] bg-metallic-ripples text-slate-100 font-sans selection:bg-amber-500 selection:text-black relative overflow-x-hidden">
-      {/* Interactive 3D Golden Ember & Particle Starfield Canvas */}
+    <div className="min-h-screen w-full bg-[#050811] bg-metallic-ripples text-slate-100 font-sans selection:bg-blue-600 selection:text-white relative overflow-x-hidden">
+      {/* Interactive 3D Dark Blue Ember & Particle Starfield Canvas */}
       <ParticleCanvas3D />
 
       {/* ========================================================================= */}
@@ -345,35 +344,35 @@ export default function KoditHomePage() {
                 <div className="relative w-8 h-8 flex items-center justify-center">
                   <svg
                     viewBox="0 0 32 32"
-                    className="w-full h-full drop-shadow-[0_0_10px_rgba(245,158,11,0.65)]"
+                    className="w-full h-full drop-shadow-[0_0_10px_rgba(37, 99, 235,0.65)]"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M6 5L12 9V23L6 27V5Z"
-                      stroke="#f59e0b"
+                      stroke="#2563eb"
                       strokeWidth="2"
                       strokeLinejoin="round"
-                      fill="rgba(245, 158, 11, 0.15)"
+                      fill="rgba(37, 99, 235, 0.15)"
                     />
                     <path
                       d="M14 15L23 6L27 9L18 17L27 24L23 27L14 19V15Z"
-                      stroke="#fbbf24"
+                      stroke="#60a5fa"
                       strokeWidth="2"
                       strokeLinejoin="round"
-                      fill="rgba(251, 191, 36, 0.25)"
+                      fill="rgba(96, 165, 250, 0.25)"
                     />
                   </svg>
                 </div>
-                <span className="font-extrabold text-xl tracking-wider text-white text-gold-glow">
+                <span className="font-extrabold text-xl tracking-wider text-white text-blue-glow">
                   KODIT
                 </span>
               </div>
 
               {/* Navigation Links */}
               <div className="hidden xl:flex items-center gap-5 lg:gap-6 text-sm font-normal text-zinc-300">
-                <a href="#lab" className="hover:text-amber-300 transition-colors duration-200 flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                <a href="#lab" className="hover:text-blue-300 transition-colors duration-200 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
                   <span>AI &amp; Mobile Lab</span>
                 </a>
                 <a href="#services" className="hover:text-white transition-colors duration-200">
@@ -396,24 +395,21 @@ export default function KoditHomePage() {
                 </a>
               </div>
 
-              {/* Sound Toggle & Start Project Button */}
-              <div className="flex items-center gap-3">
-                <SoundToggle />
-                <button
-                  onClick={() => setModalOpen(true)}
-                  className="button-nav-project px-5 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium text-amber-200/90 tracking-wide transition-all duration-300"
-                >
-                  Start Project
-                </button>
-              </div>
+              {/* Start Project Button */}
+              <button
+                onClick={() => setModalOpen(true)}
+                className="button-nav-project px-5 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium text-blue-200/90 tracking-wide transition-all duration-300"
+              >
+                Start Project
+              </button>
             </nav>
           </header>
 
           {/* HERO MAIN BODY */}
           <main className="relative z-20 flex-1 px-6 sm:px-10 lg:px-12 flex flex-col justify-center py-6 sm:py-8">
             <div className="max-w-xl flex flex-col items-start gap-4 sm:gap-5">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.25)]">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-600/10 border border-blue-600/30 text-blue-300 shadow-[0_0_12px_rgba(37, 99, 235,0.25)]">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping" />
                 <span>Specialized Mobile App &amp; AI Engineering Studio</span>
               </div>
 
@@ -429,7 +425,7 @@ export default function KoditHomePage() {
               <div className="flex items-center gap-4 pt-2">
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="button-gold text-black font-bold px-7 sm:px-8 py-3 rounded-full text-xs sm:text-sm tracking-wide transition-all duration-300 hover:scale-105"
+                  className="button-gold text-white font-bold px-7 sm:px-8 py-3 rounded-full text-xs sm:text-sm tracking-wide transition-all duration-300 hover:scale-105"
                 >
                   Start Mobile &amp; AI Project
                 </button>
@@ -444,11 +440,11 @@ export default function KoditHomePage() {
 
               <div className="flex flex-wrap items-center gap-2 pt-2 text-[10px] font-mono text-zinc-400">
                 <span className="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 flex items-center gap-1.5 text-zinc-300">
-                  <Smartphone className="w-3 h-3 text-amber-400" />
+                  <Smartphone className="w-3 h-3 text-blue-400" />
                   <span>120 FPS Native Mobile UI</span>
                 </span>
                 <span className="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 flex items-center gap-1.5 text-zinc-300">
-                  <Brain className="w-3 h-3 text-amber-400" />
+                  <Brain className="w-3 h-3 text-blue-400" />
                   <span>0.4ms On-Device Neural Sync</span>
                 </span>
                 <span className="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 flex items-center gap-1.5 text-zinc-300">
@@ -461,7 +457,7 @@ export default function KoditHomePage() {
 
           {/* BOTTOM SECTION: Floating Analytics Card & Telemetry */}
           <div className="relative z-20 px-6 sm:px-10 lg:px-12 pb-6 sm:pb-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 pointer-events-none">
-            <div className="pointer-events-auto card-glass rounded-2xl p-4 w-[280px] sm:w-[320px] transition-all hover:scale-[1.03] animate-float-slow shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_25px_rgba(245,158,11,0.2)]">
+            <div className="pointer-events-auto card-glass rounded-2xl p-4 w-[280px] sm:w-[320px] transition-all hover:scale-[1.03] animate-float-slow shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_25px_rgba(37, 99, 235,0.2)]">
               <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/[0.08]">
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-medium text-zinc-200">Materials</span>
@@ -490,8 +486,8 @@ export default function KoditHomePage() {
                           style={{ height: `${b.height}%` }}
                           className={`w-full rounded-t-[2px] transition-all duration-500 ${
                             i === 2
-                              ? "bg-gradient-to-t from-amber-600 via-amber-400 to-yellow-200 shadow-[0_0_12px_rgba(245,158,11,0.8)] animate-bar-live"
-                              : "bg-gradient-to-t from-amber-900/80 to-amber-500/80"
+                              ? "bg-gradient-to-t from-blue-700 via-blue-500 to-sky-300 shadow-[0_0_12px_rgba(37, 99, 235,0.8)] animate-bar-live"
+                              : "bg-gradient-to-t from-blue-950/80 to-blue-600/80"
                           }`}
                         />
                       </div>
@@ -516,7 +512,7 @@ export default function KoditHomePage() {
                         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                       />
                       <path
-                        className="text-amber-400 drop-shadow-[0_0_12px_rgba(245,158,11,0.9)]"
+                        className="text-blue-400 drop-shadow-[0_0_12px_rgba(37, 99, 235,0.9)]"
                         strokeDasharray="86, 100"
                         strokeLinecap="round"
                         strokeWidth="3.4"
@@ -526,12 +522,12 @@ export default function KoditHomePage() {
                       />
                     </svg>
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-base font-bold font-mono text-white tracking-tighter drop-shadow-[0_0_8px_rgba(251,191,36,0.6)]">
+                      <span className="text-base font-bold font-mono text-white tracking-tighter drop-shadow-[0_0_8px_rgba(96, 165, 250,0.6)]">
                         2.1
                       </span>
                     </div>
                   </div>
-                  <span className="text-[8px] font-mono text-amber-300/80 uppercase tracking-wider mt-0.5">
+                  <span className="text-[8px] font-mono text-blue-300/80 uppercase tracking-wider mt-0.5">
                     KPI Gauge
                   </span>
                 </div>
@@ -546,7 +542,7 @@ export default function KoditHomePage() {
               <span className="text-zinc-600">|</span>
               <span>Terminal</span>
               <div className="w-7 h-1 rounded-full bg-zinc-700 relative overflow-hidden">
-                <div className="bg-amber-400 h-full w-3/4 animate-pulse" />
+                <div className="bg-blue-400 h-full w-3/4 animate-pulse" />
               </div>
             </div>
           </div>
@@ -573,7 +569,7 @@ export default function KoditHomePage() {
       {/* ========================================================================= */}
       <section id="workflow" className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/5">
         <div className="flex flex-col items-center text-center space-y-3 mb-14 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.2)]">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-600/10 border border-blue-600/30 text-blue-300 shadow-[0_0_12px_rgba(37, 99, 235,0.2)]">
             <span>Our System</span>
           </div>
 
@@ -581,15 +577,15 @@ export default function KoditHomePage() {
             Engineered for Scale, Driven by Intelligence
           </h2>
 
-          <p className="text-xs sm:text-sm font-mono text-amber-300/80 uppercase tracking-widest pt-1">
+          <p className="text-xs sm:text-sm font-mono text-blue-300/80 uppercase tracking-widest pt-1">
             The KODIT System // Continuous Integration &amp; Deployment Mesh
           </p>
         </div>
 
         {/* 4-Step Connected Horizontal Timeline */}
         <div className="relative mb-16 sm:mb-20">
-          <div className="hidden lg:block absolute top-[52px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-amber-500/20 via-amber-400/80 to-amber-500/20 z-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-200 to-transparent w-36 circuit-pulse" />
+          <div className="hidden lg:block absolute top-[52px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-blue-600/20 via-blue-400/80 to-blue-600/20 z-0">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sky-300 to-transparent w-36 circuit-pulse" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
@@ -599,23 +595,23 @@ export default function KoditHomePage() {
                   onMouseEnter={() => setActiveStep(idx)}
                   onMouseLeave={() => setActiveStep(null)}
                   className={`card-workflow rounded-3xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-300 h-full ${
-                    activeStep === idx ? "border-amber-400/80 shadow-[0_0_35px_rgba(245,158,11,0.3)]" : ""
+                    activeStep === idx ? "border-blue-400/80 shadow-[0_0_35px_rgba(37, 99, 235,0.3)]" : ""
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-400/50 flex items-center justify-center font-mono font-bold text-base text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.3)]">
+                      <span className="w-11 h-11 rounded-2xl bg-blue-600/15 border border-blue-400/50 flex items-center justify-center font-mono font-bold text-base text-blue-300 shadow-[0_0_12px_rgba(37, 99, 235,0.3)]">
                         {step.num}
                       </span>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/5 border border-amber-500/20 text-amber-300">
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/5 border border-blue-600/20 text-blue-300">
                         {step.badge}
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
+                    <h3 className="text-lg font-bold text-white group-hover:text-blue-300 transition-colors">
                       {step.title}
                     </h3>
-                    <p className="text-xs font-mono text-amber-400/90 mt-1 mb-3">
+                    <p className="text-xs font-mono text-blue-400/90 mt-1 mb-3">
                       {step.subtitle}
                     </p>
 
@@ -624,10 +620,10 @@ export default function KoditHomePage() {
                     </p>
 
                     {idx === 0 && (
-                      <div className="p-3 rounded-xl bg-black/60 border border-amber-500/20 space-y-2 font-mono text-[9px] text-zinc-400">
+                      <div className="p-3 rounded-xl bg-black/60 border border-blue-600/20 space-y-2 font-mono text-[9px] text-zinc-400">
                         <div className="flex items-center justify-between text-zinc-300 border-b border-white/5 pb-1">
                           <span>Digital Wireframes</span>
-                          <span className="text-amber-400">Approved</span>
+                          <span className="text-blue-400">Approved</span>
                         </div>
                         <div className="flex items-center justify-between text-zinc-300">
                           <span>Data Architecture</span>
@@ -637,23 +633,23 @@ export default function KoditHomePage() {
                     )}
 
                     {idx === 1 && (
-                      <div className="p-3 rounded-xl bg-black/60 border border-amber-500/20 space-y-2 font-mono text-[9px]">
+                      <div className="p-3 rounded-xl bg-black/60 border border-blue-600/20 space-y-2 font-mono text-[9px]">
                         <div className="flex items-center gap-1.5 text-emerald-400 border-b border-white/5 pb-1">
                           <GitCommit className="w-3 h-3" />
                           <span>active deploy: #8f2a9c</span>
                         </div>
                         <div className="flex items-center justify-between text-zinc-400">
                           <span>React Native / Web</span>
-                          <span className="text-amber-300">100% Pass</span>
+                          <span className="text-blue-300">100% Pass</span>
                         </div>
                       </div>
                     )}
 
                     {idx === 2 && (
-                      <div className="p-3 rounded-xl bg-black/60 border border-amber-500/20 space-y-2 font-mono text-[9px]">
+                      <div className="p-3 rounded-xl bg-black/60 border border-blue-600/20 space-y-2 font-mono text-[9px]">
                         <div className="flex items-center justify-between text-zinc-300 border-b border-white/5 pb-1">
                           <span>AI Inference Nodes</span>
-                          <span className="text-amber-400">Active</span>
+                          <span className="text-blue-400">Active</span>
                         </div>
                         <div className="flex items-center justify-between text-zinc-300">
                           <span>Robotic Pipelines</span>
@@ -663,14 +659,14 @@ export default function KoditHomePage() {
                     )}
 
                     {idx === 3 && (
-                      <div className="p-3 rounded-xl bg-black/60 border border-amber-500/20 space-y-2 font-mono text-[9px]">
+                      <div className="p-3 rounded-xl bg-black/60 border border-blue-600/20 space-y-2 font-mono text-[9px]">
                         <div className="flex items-center justify-between text-zinc-300 border-b border-white/5 pb-1">
                           <span>Server Stacks</span>
                           <span className="text-emerald-400">99.999% SLA</span>
                         </div>
                         <div className="flex items-center justify-between text-zinc-300">
                           <span>Health Telemetry</span>
-                          <span className="text-amber-400">Optimal</span>
+                          <span className="text-blue-400">Optimal</span>
                         </div>
                       </div>
                     )}
@@ -678,7 +674,7 @@ export default function KoditHomePage() {
 
                   <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
                     <span className="text-zinc-500">Details on hover</span>
-                    <span className="text-amber-400 group-hover:text-amber-300 transition-colors">Learn More</span>
+                    <span className="text-blue-400 group-hover:text-blue-300 transition-colors">Learn More</span>
                   </div>
                 </div>
               </Card3D>
@@ -691,11 +687,11 @@ export default function KoditHomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-white/10 pb-4">
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
-              <h3 className="text-2xl font-bold tracking-tight text-white text-gold-glow">
+              <h3 className="text-2xl font-bold tracking-tight text-white text-blue-glow">
                 Ecosystem Tech Grid
               </h3>
             </div>
-            <span className="text-xs font-mono text-amber-300/80">
+            <span className="text-xs font-mono text-blue-300/80">
               PROPRIETARY &amp; OPEN-SOURCE RUNTIMES
             </span>
           </div>
@@ -707,18 +703,18 @@ export default function KoditHomePage() {
                 className="card-tech-logo rounded-2xl p-4 flex flex-col items-center justify-between text-center min-h-[140px] group cursor-pointer relative overflow-hidden"
               >
                 {tech.badge && (
-                  <span className="text-[8px] font-mono px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 whitespace-nowrap mb-1">
+                  <span className="text-[8px] font-mono px-2 py-0.5 rounded-full bg-blue-600/10 text-blue-300 border border-blue-600/30 whitespace-nowrap mb-1">
                     {tech.badge}
                   </span>
                 )}
                 {!tech.badge && <div className="h-4" />}
 
-                <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 group-hover:scale-110 group-hover:border-amber-400/60 transition-all duration-300">
+                <div className="p-2 rounded-xl bg-blue-600/10 border border-blue-600/20 group-hover:scale-110 group-hover:border-blue-400/60 transition-all duration-300">
                   {tech.icon}
                 </div>
 
                 <div className="mt-1">
-                  <h4 className="text-xs font-bold text-white group-hover:text-amber-300 transition-colors">
+                  <h4 className="text-xs font-bold text-white group-hover:text-blue-300 transition-colors">
                     {tech.name}
                   </h4>
                   <p className="text-[9px] font-mono text-zinc-400">
@@ -726,7 +722,7 @@ export default function KoditHomePage() {
                   </p>
                 </div>
 
-                <span className="text-[10px] font-mono text-amber-400/90 pt-1 group-hover:text-amber-300">
+                <span className="text-[10px] font-mono text-blue-400/90 pt-1 group-hover:text-blue-300">
                   Learn More
                 </span>
               </div>
@@ -734,8 +730,8 @@ export default function KoditHomePage() {
           </div>
 
           <div className="flex justify-center pt-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-black/60 text-xs font-mono text-zinc-300 shadow-[0_0_15px_rgba(245,158,11,0.15)]">
-              <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#f59e0b] animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-600/30 bg-black/60 text-xs font-mono text-zinc-300 shadow-[0_0_15px_rgba(37, 99, 235,0.15)]">
+              <span className="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_8px_#2563eb] animate-pulse" />
               <span>Operational | Terminal</span>
             </div>
           </div>
@@ -747,13 +743,13 @@ export default function KoditHomePage() {
       {/* ========================================================================= */}
       <section id="services" className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/5">
         <div className="flex flex-col items-center text-center space-y-3 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-600/10 border border-blue-600/30 text-blue-300">
             <Sparkles className="w-3 h-3" />
             <span>Mobile App & AI Services</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
-            WHAT WE DO: <span className="animate-shimmer-gold">MOBILE & AI SERVICES MATRIX</span>
+            WHAT WE DO: <span className="animate-shimmer-blue">MOBILE & AI SERVICES MATRIX</span>
           </h2>
 
           <p className="text-sm sm:text-base text-zinc-400 max-w-2xl font-normal leading-relaxed">
@@ -766,23 +762,23 @@ export default function KoditHomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
           {bentoServices.map((service, index) => (
             <Card3D key={service.id} intensity={12} className="h-full">
-              <div className="card-bento-gold rounded-3xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden h-full">
-                <div className="absolute -top-12 -right-12 w-32 h-32 bg-amber-500/15 rounded-full blur-2xl pointer-events-none group-hover:bg-amber-500/25 transition-all" />
+              <div className="card-bento-blue rounded-3xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden h-full">
+                <div className="absolute -top-12 -right-12 w-32 h-32 bg-blue-600/15 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-600/25 transition-all" />
 
                 <div>
                   <div className="flex items-center justify-between pb-3">
-                    <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                    <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-blue-600/10 text-blue-300 border border-blue-600/30">
                       {service.badge}
                     </span>
-                    {index === 0 && <Smartphone className="w-4 h-4 text-amber-400" />}
-                    {index === 1 && <Layers className="w-4 h-4 text-amber-400" />}
-                    {index === 2 && <Brain className="w-4 h-4 text-amber-400" />}
-                    {index === 3 && <Database className="w-4 h-4 text-amber-400" />}
-                    {index === 4 && <Eye className="w-4 h-4 text-amber-400" />}
-                    {index === 5 && <Mic className="w-4 h-4 text-amber-400" />}
+                    {index === 0 && <Smartphone className="w-4 h-4 text-blue-400" />}
+                    {index === 1 && <Layers className="w-4 h-4 text-blue-400" />}
+                    {index === 2 && <Brain className="w-4 h-4 text-blue-400" />}
+                    {index === 3 && <Database className="w-4 h-4 text-blue-400" />}
+                    {index === 4 && <Eye className="w-4 h-4 text-blue-400" />}
+                    {index === 5 && <Mic className="w-4 h-4 text-blue-400" />}
                   </div>
 
-                  <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-amber-300 transition-colors">
+                  <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-blue-300 transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-xs text-zinc-400 mt-1 mb-4">
@@ -799,7 +795,7 @@ export default function KoditHomePage() {
                           desc: "High-performance native mobile apps running with sub-16ms render times, Biometric Enclave security, and offline AI execution.",
                           category: "MOBILE HARDWARE SHOWCASE"
                         })}
-                        className="relative h-32 w-full rounded-2xl overflow-hidden border border-amber-500/30 group/img cursor-pointer"
+                        className="relative h-32 w-full rounded-2xl overflow-hidden border border-blue-600/30 group/img cursor-pointer"
                       >
                         <Image
                           src="/kodit-mobile-phones.jpg"
@@ -810,27 +806,27 @@ export default function KoditHomePage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                         <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                          <span className="text-amber-300 flex items-center gap-1">
+                          <span className="text-blue-300 flex items-center gap-1">
                             <Smartphone className="w-3 h-3" />
                             <span>3D Native Handhelds</span>
                           </span>
-                          <span className="px-2 py-0.5 rounded-full bg-black/70 text-zinc-300 border border-white/10 flex items-center gap-1 group-hover/img:border-amber-400">
-                            <Maximize2 className="w-2.5 h-2.5 text-amber-400" />
+                          <span className="px-2 py-0.5 rounded-full bg-black/70 text-zinc-300 border border-white/10 flex items-center gap-1 group-hover/img:border-blue-400">
+                            <Maximize2 className="w-2.5 h-2.5 text-blue-400" />
                             <span>Inspect</span>
                           </span>
                         </div>
                       </div>
 
-                      <div className="relative p-3 rounded-2xl bg-black/60 border border-amber-500/20 overflow-hidden">
+                      <div className="relative p-3 rounded-2xl bg-black/60 border border-blue-600/20 overflow-hidden">
                         <div className="flex items-center justify-between pb-1.5 border-b border-white/5 text-[10px] font-mono text-zinc-400">
                           <span>Runtime Engine</span>
-                          <span className="text-amber-400 font-bold">60 FPS Native</span>
+                          <span className="text-blue-400 font-bold">60 FPS Native</span>
                         </div>
                         <div className="grid grid-cols-12 gap-2 items-center py-2">
-                          <div className="relative overflow-hidden col-span-4 flex flex-col items-center justify-center p-1.5 rounded-xl bg-amber-500/10 border border-amber-500/30">
-                            <Fingerprint className="w-6 h-6 text-amber-400 animate-pulse" />
-                            <div className="absolute inset-x-0 h-0.5 bg-amber-300 shadow-[0_0_8px_#fde047] animate-scan-line pointer-events-none" />
-                            <span className="text-[8px] font-mono text-amber-300 mt-0.5">Biometric OK</span>
+                          <div className="relative overflow-hidden col-span-4 flex flex-col items-center justify-center p-1.5 rounded-xl bg-blue-600/10 border border-blue-600/30">
+                            <Fingerprint className="w-6 h-6 text-blue-400 animate-pulse" />
+                            <div className="absolute inset-x-0 h-0.5 bg-blue-300 shadow-[0_0_8px_#93c5fd] animate-scan-line pointer-events-none" />
+                            <span className="text-[8px] font-mono text-blue-300 mt-0.5">Biometric OK</span>
                           </div>
                           <div className="col-span-8 space-y-1 font-mono text-[9px] text-zinc-300">
                             <div className="flex justify-between">
@@ -838,7 +834,7 @@ export default function KoditHomePage() {
                               <span className="text-emerald-400">0.8ms Sync</span>
                             </div>
                             <div className="w-full bg-zinc-800 h-1.5 rounded-full overflow-hidden">
-                              <div className="bg-gradient-to-r from-amber-500 to-yellow-300 h-full w-[94%]" />
+                              <div className="bg-gradient-to-r from-blue-500 to-sky-300 h-full w-[94%]" />
                             </div>
                           </div>
                         </div>
@@ -856,7 +852,7 @@ export default function KoditHomePage() {
                           desc: "Dual 4K workstation architecture with serverless microservice diagrams, glowing code topologies, and distributed cloud computing.",
                           category: "ENTERPRISE PC WORKSTATION"
                         })}
-                        className="relative h-32 w-full rounded-2xl overflow-hidden border border-amber-500/30 group/img cursor-pointer"
+                        className="relative h-32 w-full rounded-2xl overflow-hidden border border-blue-600/30 group/img cursor-pointer"
                       >
                         <Image
                           src="/kodit-pc-workstation.jpg"
@@ -867,25 +863,25 @@ export default function KoditHomePage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                         <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                          <span className="text-amber-300 flex items-center gap-1">
+                          <span className="text-blue-300 flex items-center gap-1">
                             <Monitor className="w-3 h-3" />
                             <span>4K PC Workstation</span>
                           </span>
-                          <span className="px-2 py-0.5 rounded-full bg-black/70 text-zinc-300 border border-white/10 flex items-center gap-1 group-hover/img:border-amber-400">
-                            <Maximize2 className="w-2.5 h-2.5 text-amber-400" />
+                          <span className="px-2 py-0.5 rounded-full bg-black/70 text-zinc-300 border border-white/10 flex items-center gap-1 group-hover/img:border-blue-400">
+                            <Maximize2 className="w-2.5 h-2.5 text-blue-400" />
                             <span>Inspect</span>
                           </span>
                         </div>
                       </div>
 
-                      <div className="relative p-3 rounded-2xl bg-black/60 border border-amber-500/20 space-y-2">
+                      <div className="relative p-3 rounded-2xl bg-black/60 border border-blue-600/20 space-y-2">
                         <div className="flex items-center justify-between text-[10px] font-mono">
-                          <div className="flex items-center gap-1 px-2 py-0.5 rounded bg-zinc-900 border border-amber-500/30 text-amber-300">
+                          <div className="flex items-center gap-1 px-2 py-0.5 rounded bg-zinc-900 border border-blue-600/30 text-blue-300">
                             <Globe className="w-2.5 h-2.5" />
                             <span>Serverless</span>
                           </div>
-                          <div className="w-1.5 h-1.5 rounded-full bg-amber-400/50" />
-                          <div className="flex items-center gap-1 px-2 py-0.5 rounded bg-zinc-900 border border-amber-500/30 text-amber-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-blue-400/50" />
+                          <div className="flex items-center gap-1 px-2 py-0.5 rounded bg-zinc-900 border border-blue-600/30 text-blue-300">
                             <Database className="w-2.5 h-2.5" />
                             <span>Postgres</span>
                           </div>
@@ -895,7 +891,7 @@ export default function KoditHomePage() {
                             <div
                               key={idx}
                               style={{ height: `${val}%` }}
-                              className="flex-1 bg-gradient-to-t from-amber-700 to-amber-400 rounded-t-[1px]"
+                              className="flex-1 bg-gradient-to-t from-blue-700 to-blue-400 rounded-t-[1px]"
                             />
                           ))}
                         </div>
@@ -910,10 +906,10 @@ export default function KoditHomePage() {
                         onClick={() => setExpandedImage({
                           src: "/kodit-ai-core.jpg",
                           title: "KODIT 3D AI Neural Core & Agent Matrix",
-                          desc: "Autonomous multi-agent orchestration core, vector embeddings, and real-time multi-modal LLM reasoning pipelines glowing with golden synaptic energy.",
+                          desc: "Autonomous multi-agent orchestration core, vector embeddings, and real-time multi-modal LLM reasoning pipelines glowing with dark blue synaptic energy.",
                           category: "3D ARTIFICIAL INTELLIGENCE CORE"
                         })}
-                        className="relative h-32 w-full rounded-2xl overflow-hidden border border-amber-500/30 group/img cursor-pointer"
+                        className="relative h-32 w-full rounded-2xl overflow-hidden border border-blue-600/30 group/img cursor-pointer"
                       >
                         <Image
                           src="/kodit-ai-core.jpg"
@@ -924,38 +920,38 @@ export default function KoditHomePage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                         <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                          <span className="text-amber-300 flex items-center gap-1">
-                            <Brain className="w-3 h-3 text-amber-400 animate-pulse" />
+                          <span className="text-blue-300 flex items-center gap-1">
+                            <Brain className="w-3 h-3 text-blue-400 animate-pulse" />
                             <span>3D Neural Core</span>
                           </span>
-                          <span className="px-2 py-0.5 rounded-full bg-black/70 text-zinc-300 border border-white/10 flex items-center gap-1 group-hover/img:border-amber-400">
-                            <Maximize2 className="w-2.5 h-2.5 text-amber-400" />
+                          <span className="px-2 py-0.5 rounded-full bg-black/70 text-zinc-300 border border-white/10 flex items-center gap-1 group-hover/img:border-blue-400">
+                            <Maximize2 className="w-2.5 h-2.5 text-blue-400" />
                             <span>Inspect</span>
                           </span>
                         </div>
                       </div>
 
-                      <div className="relative p-3 rounded-2xl bg-black/60 border border-amber-500/20 flex flex-col items-center justify-center space-y-2">
+                      <div className="relative p-3 rounded-2xl bg-black/60 border border-blue-600/20 flex flex-col items-center justify-center space-y-2">
                         <div className="flex items-center justify-between w-full font-mono text-[9px] text-zinc-300">
-                          <span className="text-amber-400 font-semibold">Autonomous Core // v4</span>
+                          <span className="text-blue-400 font-semibold">Autonomous Core // v4</span>
                           <span className="text-emerald-400">99.8% Accuracy</span>
                         </div>
                         <div className="w-full bg-zinc-800 h-1.5 rounded-full overflow-hidden">
-                          <div className="bg-gradient-to-r from-amber-600 via-amber-400 to-yellow-300 h-full w-[99.8%] shadow-[0_0_8px_#f59e0b]" />
+                          <div className="bg-gradient-to-r from-blue-700 via-blue-500 to-sky-300 h-full w-[99.8%] shadow-[0_0_8px_#2563eb]" />
                         </div>
                         <div className="flex items-center justify-between w-full text-[9px] font-mono text-zinc-400 pt-0.5">
                           <span>Multi-Model Agent Loop</span>
-                          <span className="text-amber-300">Active Mesh</span>
+                          <span className="text-blue-300">Active Mesh</span>
                         </div>
                       </div>
                     </div>
                   )}
 
                   {index === 3 && (
-                    <div className="relative my-3 p-3.5 rounded-2xl bg-black/60 border border-amber-500/20 space-y-2.5 font-mono text-[10px]">
+                    <div className="relative my-3 p-3.5 rounded-2xl bg-black/60 border border-blue-600/20 space-y-2.5 font-mono text-[10px]">
                       <div className="flex items-center justify-between pb-1 border-b border-white/5">
-                        <span className="text-amber-300 flex items-center gap-1.5">
-                          <Database className="w-3.5 h-3.5 text-amber-400" />
+                        <span className="text-blue-300 flex items-center gap-1.5">
+                          <Database className="w-3.5 h-3.5 text-blue-400" />
                           <span>Vector RAG Pipeline</span>
                         </span>
                         <span className="text-emerald-400 font-bold">18ms Query</span>
@@ -963,11 +959,11 @@ export default function KoditHomePage() {
                       <div className="space-y-1.5 text-zinc-300">
                         <div className="flex justify-between text-[9px]">
                           <span className="text-zinc-400">Embedding Dim:</span>
-                          <span className="text-amber-300">1536-dim text-embed-3</span>
+                          <span className="text-blue-300">1536-dim text-embed-3</span>
                         </div>
                         <div className="flex justify-between text-[9px]">
                           <span className="text-zinc-400">Vector Store:</span>
-                          <span className="text-amber-300">Pinecone / Qdrant Hybrid</span>
+                          <span className="text-blue-300">Pinecone / Qdrant Hybrid</span>
                         </div>
                         <div className="flex items-center justify-between text-[9px] pt-1 border-t border-white/5">
                           <span className="text-zinc-400">Context Grounding:</span>
@@ -978,17 +974,17 @@ export default function KoditHomePage() {
                   )}
 
                   {index === 4 && (
-                    <div className="relative my-3 p-3.5 rounded-2xl bg-black/60 border border-amber-500/20 space-y-2.5 font-mono text-[10px]">
+                    <div className="relative my-3 p-3.5 rounded-2xl bg-black/60 border border-blue-600/20 space-y-2.5 font-mono text-[10px]">
                       <div className="flex items-center justify-between pb-1 border-b border-white/5">
-                        <span className="text-amber-300 flex items-center gap-1.5">
-                          <Eye className="w-3.5 h-3.5 text-amber-400" />
+                        <span className="text-blue-300 flex items-center gap-1.5">
+                          <Eye className="w-3.5 h-3.5 text-blue-400" />
                           <span>Neural Vision Engine</span>
                         </span>
                         <span className="text-emerald-400 font-bold">60 FPS Real-time</span>
                       </div>
                       <div className="grid grid-cols-2 gap-2 text-center">
                         <div className="p-2 rounded-xl bg-zinc-900 border border-white/5">
-                          <span className="text-amber-400 font-bold block text-sm">0.4 ms</span>
+                          <span className="text-blue-400 font-bold block text-sm">0.4 ms</span>
                           <span className="text-[8px] text-zinc-400 uppercase">CoreML NPU</span>
                         </div>
                         <div className="p-2 rounded-xl bg-zinc-900 border border-white/5">
@@ -998,17 +994,17 @@ export default function KoditHomePage() {
                       </div>
                       <div className="flex items-center justify-between text-[9px] text-zinc-400">
                         <span>Model: YOLO-v10-Nano</span>
-                        <span className="text-amber-300">Biometric Secure</span>
+                        <span className="text-blue-300">Biometric Secure</span>
                       </div>
                     </div>
                   )}
 
                   {index === 5 && (
-                    <div className="relative my-3 p-3.5 rounded-2xl bg-black/60 border border-amber-500/20 space-y-2.5 font-mono text-[10px]">
+                    <div className="relative my-3 p-3.5 rounded-2xl bg-black/60 border border-blue-600/20 space-y-2.5 font-mono text-[10px]">
                       <div className="flex items-center justify-between pb-1 border-b border-white/5">
                         <div className="flex items-center gap-1.5">
-                          <Mic className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-                          <span className="text-amber-300">Live Speech & Action</span>
+                          <Mic className="w-3.5 h-3.5 text-blue-400 animate-pulse" />
+                          <span className="text-blue-300">Live Speech & Action</span>
                         </div>
                         <span className="text-emerald-400 font-bold">190ms Voice Sync</span>
                       </div>
@@ -1017,13 +1013,13 @@ export default function KoditHomePage() {
                           <div
                             key={i}
                             style={{ height: `${h}%` }}
-                            className="flex-1 bg-gradient-to-t from-amber-600 to-yellow-300 rounded-t-[1px]"
+                            className="flex-1 bg-gradient-to-t from-blue-600 to-sky-300 rounded-t-[1px]"
                           />
                         ))}
                       </div>
                       <div className="flex items-center justify-between text-[9px] text-zinc-400">
                         <span>Whisper v3 Turbo</span>
-                        <span className="text-amber-300">Autonomous CRM Sync</span>
+                        <span className="text-blue-300">Autonomous CRM Sync</span>
                       </div>
                     </div>
                   )}
@@ -1031,7 +1027,7 @@ export default function KoditHomePage() {
 
                 <button
                   onClick={() => setSelectedService(service)}
-                  className="mt-4 pt-3 border-t border-white/10 flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors"
+                  className="mt-4 pt-3 border-t border-white/10 flex items-center text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors"
                 >
                   <span>Learn More</span>
                 </button>
@@ -1060,13 +1056,13 @@ export default function KoditHomePage() {
       <section id="devices" className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/5">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center space-y-3 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.2)]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-600/10 border border-blue-600/30 text-blue-300 shadow-[0_0_12px_rgba(37, 99, 235,0.2)]">
             <Monitor className="w-3.5 h-3.5" />
             <span>Cross-Platform Hardware &amp; Devices</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl lg:text-[52px] font-extrabold tracking-tight leading-tight animate-shimmer-text">
-            Engineered for <span className="animate-shimmer-gold">Mobile, Laptop &amp; PC</span> Workstations
+            Engineered for <span className="animate-shimmer-blue">Mobile, Laptop &amp; PC</span> Workstations
           </h2>
 
           <p className="text-sm sm:text-base text-zinc-300 max-w-2xl font-normal leading-relaxed">
@@ -1088,7 +1084,7 @@ export default function KoditHomePage() {
             onClick={() => setActiveDeviceTab("suite")}
             className={`px-4 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-mono flex items-center gap-2 transition-all ${
               activeDeviceTab === "suite"
-                ? "bg-amber-400 text-black font-bold shadow-[0_0_20px_rgba(245,158,11,0.5)] scale-105"
+                ? "bg-blue-400 text-black font-bold shadow-[0_0_20px_rgba(37, 99, 235,0.5)] scale-105"
                 : "bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10"
             }`}
           >
@@ -1100,7 +1096,7 @@ export default function KoditHomePage() {
             onClick={() => setActiveDeviceTab("mobile")}
             className={`px-4 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-mono flex items-center gap-2 transition-all ${
               activeDeviceTab === "mobile"
-                ? "bg-amber-400 text-black font-bold shadow-[0_0_20px_rgba(245,158,11,0.5)] scale-105"
+                ? "bg-blue-400 text-black font-bold shadow-[0_0_20px_rgba(37, 99, 235,0.5)] scale-105"
                 : "bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10"
             }`}
           >
@@ -1112,7 +1108,7 @@ export default function KoditHomePage() {
             onClick={() => setActiveDeviceTab("pc")}
             className={`px-4 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-mono flex items-center gap-2 transition-all ${
               activeDeviceTab === "pc"
-                ? "bg-amber-400 text-black font-bold shadow-[0_0_20px_rgba(245,158,11,0.5)] scale-105"
+                ? "bg-blue-400 text-black font-bold shadow-[0_0_20px_rgba(37, 99, 235,0.5)] scale-105"
                 : "bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10"
             }`}
           >
@@ -1122,7 +1118,7 @@ export default function KoditHomePage() {
         </div>
 
         {/* Large Stage Display with Dynamic Image */}
-        <div className="relative rounded-3xl overflow-hidden card-glass border border-amber-500/30 p-2 sm:p-4 shadow-[0_20px_80px_rgba(0,0,0,0.8)] animate-pulse-glow">
+        <div className="relative rounded-3xl overflow-hidden card-glass border border-blue-600/30 p-2 sm:p-4 shadow-[0_20px_80px_rgba(0,0,0,0.8)] animate-pulse-glow">
           <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden group cursor-pointer">
             {activeDeviceTab === "suite" && (
               <Image
@@ -1160,8 +1156,8 @@ export default function KoditHomePage() {
 
             {/* Top Bar Floating Status */}
             <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-amber-500/30 text-xs font-mono text-amber-300 shadow-lg">
-                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-blue-600/30 text-xs font-mono text-blue-300 shadow-lg">
+                <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
                 <span>
                   {activeDeviceTab === "suite" && "MULTI-PLATFORM ECOSYSTEM // 4K DESKTOP + LAPTOP + MOBILE"}
                   {activeDeviceTab === "mobile" && "NATIVE HANDHELD PLATFORM // 60 FPS METAL & VULKAN SHADERS"}
@@ -1194,7 +1190,7 @@ export default function KoditHomePage() {
                     });
                   }
                 }}
-                className="px-3.5 py-1.5 rounded-full bg-black/80 hover:bg-amber-400 hover:text-black backdrop-blur-md border border-white/20 text-xs font-mono text-zinc-200 transition-all flex items-center gap-1.5 shadow-xl"
+                className="px-3.5 py-1.5 rounded-full bg-black/80 hover:bg-blue-400 hover:text-black backdrop-blur-md border border-white/20 text-xs font-mono text-zinc-200 transition-all flex items-center gap-1.5 shadow-xl"
               >
                 <Maximize2 className="w-3.5 h-3.5" />
                 <span>View Full 8K Image</span>
@@ -1218,7 +1214,7 @@ export default function KoditHomePage() {
 
               <button
                 onClick={() => setModalOpen(true)}
-                className="button-gold text-black font-bold px-6 py-2 rounded-full text-xs shrink-0 shadow-xl"
+                className="button-gold text-white font-bold px-6 py-2 rounded-full text-xs shrink-0 shadow-xl"
               >
                 <span>Deploy on This Hardware</span>
               </button>
@@ -1232,16 +1228,16 @@ export default function KoditHomePage() {
               onClick={() => setActiveDeviceTab("mobile")}
               className={`p-4 rounded-2xl border transition-all cursor-pointer ${
                 activeDeviceTab === "mobile"
-                  ? "bg-amber-500/10 border-amber-400/80 shadow-[0_0_20px_rgba(245,158,11,0.2)]"
-                  : "bg-black/40 border-white/10 hover:border-amber-500/40"
+                  ? "bg-blue-600/10 border-blue-400/80 shadow-[0_0_20px_rgba(37, 99, 235,0.2)]"
+                  : "bg-black/40 border-white/10 hover:border-blue-600/40"
               }`}
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <Smartphone className="w-4 h-4 text-amber-400" />
+                  <Smartphone className="w-4 h-4 text-blue-400" />
                   <span className="text-xs font-bold text-white">Native Mobile Devices</span>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-600/10 text-blue-300 border border-blue-600/20">
                   iOS / Android
                 </span>
               </div>
@@ -1260,16 +1256,16 @@ export default function KoditHomePage() {
               onClick={() => setActiveDeviceTab("suite")}
               className={`p-4 rounded-2xl border transition-all cursor-pointer ${
                 activeDeviceTab === "suite"
-                  ? "bg-amber-500/10 border-amber-400/80 shadow-[0_0_20px_rgba(245,158,11,0.2)]"
-                  : "bg-black/40 border-white/10 hover:border-amber-500/40"
+                  ? "bg-blue-600/10 border-blue-400/80 shadow-[0_0_20px_rgba(37, 99, 235,0.2)]"
+                  : "bg-black/40 border-white/10 hover:border-blue-600/40"
               }`}
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <Laptop className="w-4 h-4 text-amber-400" />
+                  <Laptop className="w-4 h-4 text-blue-400" />
                   <span className="text-xs font-bold text-white">Field Titanium Laptops</span>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-600/10 text-blue-300 border border-blue-600/20">
                   macOS / Windows
                 </span>
               </div>
@@ -1288,16 +1284,16 @@ export default function KoditHomePage() {
               onClick={() => setActiveDeviceTab("pc")}
               className={`p-4 rounded-2xl border transition-all cursor-pointer ${
                 activeDeviceTab === "pc"
-                  ? "bg-amber-500/10 border-amber-400/80 shadow-[0_0_20px_rgba(245,158,11,0.2)]"
-                  : "bg-black/40 border-white/10 hover:border-amber-500/40"
+                  ? "bg-blue-600/10 border-blue-400/80 shadow-[0_0_20px_rgba(37, 99, 235,0.2)]"
+                  : "bg-black/40 border-white/10 hover:border-blue-600/40"
               }`}
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <Monitor className="w-4 h-4 text-amber-400" />
+                  <Monitor className="w-4 h-4 text-blue-400" />
                   <span className="text-xs font-bold text-white">Enterprise PC Desktops</span>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-600/10 text-blue-300 border border-blue-600/20">
                   Dual 4K / Ultrawide
                 </span>
               </div>
@@ -1340,7 +1336,7 @@ export default function KoditHomePage() {
       <section id="impact" className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/5">
         {/* Section Subtitle & Large Bold Headline */}
         <div className="flex flex-col items-center text-center space-y-3 mb-14 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.2)]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-600/10 border border-blue-600/30 text-blue-300 shadow-[0_0_12px_rgba(37, 99, 235,0.2)]">
             <span>Our Impact</span>
           </div>
 
@@ -1348,7 +1344,7 @@ export default function KoditHomePage() {
             Proven Efficiency, Unrivaled Scale
           </h2>
 
-          <p className="text-xs sm:text-sm font-mono text-amber-300/80 uppercase tracking-widest pt-1">
+          <p className="text-xs sm:text-sm font-mono text-blue-300/80 uppercase tracking-widest pt-1">
             Quantifiable Enterprise Performance // Zero Tolerance for Latency
           </p>
         </div>
@@ -1360,9 +1356,9 @@ export default function KoditHomePage() {
           <div className="lg:col-span-6 space-y-5">
             {/* Metric 1: 99.9% Uptime SLAs with Circular Progress Gauge */}
             <Card3D intensity={10}>
-              <div className="card-glass rounded-3xl p-6 sm:p-7 border border-amber-500/25 flex items-center justify-between group hover:border-amber-400/60 transition-all relative overflow-hidden">
+              <div className="card-glass rounded-3xl p-6 sm:p-7 border border-blue-600/25 flex items-center justify-between group hover:border-blue-400/60 transition-all relative overflow-hidden">
                 <div>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-amber-300 text-gold-glow font-mono tracking-tight block">
+                  <span className="text-4xl sm:text-5xl font-extrabold text-blue-300 text-blue-glow font-mono tracking-tight block">
                     99.9%
                   </span>
                   <span className="text-xs sm:text-sm font-semibold text-zinc-300 mt-1 block">
@@ -1384,7 +1380,7 @@ export default function KoditHomePage() {
                       d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                     />
                     <path
-                      className="text-amber-400 drop-shadow-[0_0_12px_rgba(245,158,11,0.9)]"
+                      className="text-blue-400 drop-shadow-[0_0_12px_rgba(37, 99, 235,0.9)]"
                       strokeDasharray="99.9, 100"
                       strokeLinecap="round"
                       strokeWidth="3.2"
@@ -1394,8 +1390,8 @@ export default function KoditHomePage() {
                     />
                   </svg>
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <div className="w-8 h-8 rounded-full border border-amber-400/40 border-t-amber-300 animate-radar-spin flex items-center justify-center">
-                      <Zap className="w-4 h-4 text-amber-300 animate-pulse" />
+                    <div className="w-8 h-8 rounded-full border border-blue-400/40 border-t-blue-300 animate-radar-spin flex items-center justify-center">
+                      <Zap className="w-4 h-4 text-blue-300 animate-pulse" />
                     </div>
                   </div>
                 </div>
@@ -1404,9 +1400,9 @@ export default function KoditHomePage() {
 
             {/* Metric 2: 40%+ Operational Efficiency with Glowing Bar Chart Data Pipelines */}
             <Card3D intensity={10}>
-              <div className="card-glass rounded-3xl p-6 sm:p-7 border border-amber-500/25 flex items-center justify-between group hover:border-amber-400/60 transition-all relative overflow-hidden">
+              <div className="card-glass rounded-3xl p-6 sm:p-7 border border-blue-600/25 flex items-center justify-between group hover:border-blue-400/60 transition-all relative overflow-hidden">
                 <div>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-amber-300 text-gold-glow font-mono tracking-tight block">
+                  <span className="text-4xl sm:text-5xl font-extrabold text-blue-300 text-blue-glow font-mono tracking-tight block">
                     40%+
                   </span>
                   <span className="text-xs sm:text-sm font-semibold text-zinc-300 mt-1 block">
@@ -1426,14 +1422,14 @@ export default function KoditHomePage() {
                         style={{ height: `${h}%`, animationDelay: `${i * 0.18}s` }}
                         className={`w-2.5 rounded-t-[2px] transition-all duration-300 animate-bar-live ${
                           i >= 4
-                            ? "bg-gradient-to-t from-amber-600 via-amber-400 to-yellow-200 shadow-[0_0_8px_#f59e0b]"
-                            : "bg-gradient-to-t from-amber-950 to-amber-700/80"
+                            ? "bg-gradient-to-t from-blue-700 via-blue-500 to-sky-300 shadow-[0_0_8px_#2563eb]"
+                            : "bg-gradient-to-t from-blue-950 to-blue-700/80"
                         }`}
                       />
                     ))}
                   </div>
                   <div className="w-full bg-zinc-800 h-1 rounded-full relative overflow-hidden">
-                    <div className="bg-amber-400 h-1 rounded-full w-3/4 shadow-[0_0_8px_#f59e0b] animate-pulse" />
+                    <div className="bg-blue-400 h-1 rounded-full w-3/4 shadow-[0_0_8px_#2563eb] animate-pulse" />
                   </div>
                 </div>
               </div>
@@ -1441,9 +1437,9 @@ export default function KoditHomePage() {
 
             {/* Metric 3: 100% Success Rate with Fine Golden Stat Badges */}
             <Card3D intensity={10}>
-              <div className="card-glass rounded-3xl p-6 sm:p-7 border border-amber-500/25 flex items-center justify-between group hover:border-amber-400/60 transition-all relative overflow-hidden">
+              <div className="card-glass rounded-3xl p-6 sm:p-7 border border-blue-600/25 flex items-center justify-between group hover:border-blue-400/60 transition-all relative overflow-hidden">
                 <div>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-amber-300 text-gold-glow font-mono tracking-tight block">
+                  <span className="text-4xl sm:text-5xl font-extrabold text-blue-300 text-blue-glow font-mono tracking-tight block">
                     100%
                   </span>
                   <span className="text-xs sm:text-sm font-semibold text-zinc-300 mt-1 block">
@@ -1456,17 +1452,17 @@ export default function KoditHomePage() {
 
                 {/* Fine Golden Stat Badges */}
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-center hover:scale-105 transition-transform">
-                    <Award className="w-4 h-4 text-amber-400 mx-auto" />
-                    <span className="text-[8px] font-mono text-amber-300 mt-0.5 block">Verified</span>
+                  <div className="p-2 rounded-xl bg-blue-600/10 border border-blue-600/30 text-center hover:scale-105 transition-transform">
+                    <Award className="w-4 h-4 text-blue-400 mx-auto" />
+                    <span className="text-[8px] font-mono text-blue-300 mt-0.5 block">Verified</span>
                   </div>
-                  <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-center hover:scale-105 transition-transform">
-                    <ShieldCheck className="w-4 h-4 text-amber-400 mx-auto" />
-                    <span className="text-[8px] font-mono text-amber-300 mt-0.5 block">SOC2</span>
+                  <div className="p-2 rounded-xl bg-blue-600/10 border border-blue-600/30 text-center hover:scale-105 transition-transform">
+                    <ShieldCheck className="w-4 h-4 text-blue-400 mx-auto" />
+                    <span className="text-[8px] font-mono text-blue-300 mt-0.5 block">SOC2</span>
                   </div>
-                  <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/30 text-center hover:scale-105 transition-transform">
-                    <Check className="w-4 h-4 text-amber-400 mx-auto" />
-                    <span className="text-[8px] font-mono text-amber-300 mt-0.5 block">On-Time</span>
+                  <div className="p-2 rounded-xl bg-blue-600/10 border border-blue-600/30 text-center hover:scale-105 transition-transform">
+                    <Check className="w-4 h-4 text-blue-400 mx-auto" />
+                    <span className="text-[8px] font-mono text-blue-300 mt-0.5 block">On-Time</span>
                   </div>
                 </div>
               </div>
@@ -1476,9 +1472,9 @@ export default function KoditHomePage() {
           {/* RIGHT COLUMN: Large Dark Frosted Glassmorphic Card "Let's Start Your Project" */}
           <div className="lg:col-span-6">
             <Card3D intensity={8}>
-              <div className="card-glass rounded-3xl p-8 sm:p-10 border border-amber-500/40 shadow-[0_0_50px_rgba(245,158,11,0.2)] relative overflow-hidden space-y-6 animate-pulse-glow">
+              <div className="card-glass rounded-3xl p-8 sm:p-10 border border-blue-600/40 shadow-[0_0_50px_rgba(37, 99, 235,0.2)] relative overflow-hidden space-y-6 animate-pulse-glow">
                 {/* Warm Golden Glow Orb */}
-                <div className="absolute -top-24 -right-24 w-60 h-60 bg-amber-500/20 rounded-full blur-3xl pointer-events-none" />
+                <div className="absolute -top-24 -right-24 w-60 h-60 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
 
               <div>
                 <h3 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -1490,7 +1486,7 @@ export default function KoditHomePage() {
               </div>
 
               {discoverySubmitted ? (
-                <div className="p-5 rounded-2xl bg-amber-500/15 border border-amber-400/50 flex items-center gap-3 text-amber-300">
+                <div className="p-5 rounded-2xl bg-blue-600/15 border border-blue-400/50 flex items-center gap-3 text-blue-300">
                   <CheckCircle2 className="w-6 h-6 shrink-0" />
                   <div className="text-xs">
                     <p className="font-bold text-white">Discovery Call Scheduled</p>
@@ -1506,13 +1502,13 @@ export default function KoditHomePage() {
                       placeholder="Enter your email"
                       value={discoveryEmail}
                       onChange={(e) => setDiscoveryEmail(e.target.value)}
-                      className="w-full px-5 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-amber-400/80 transition-colors"
+                      className="w-full px-5 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-blue-400/80 transition-colors"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-4 rounded-2xl font-bold text-sm button-gold text-black flex items-center justify-center shadow-xl tracking-wide transition-all"
+                    className="w-full py-4 rounded-2xl font-bold text-sm button-gold text-white flex items-center justify-center shadow-xl tracking-wide transition-all"
                   >
                     <span>Schedule Discovery Call</span>
                   </button>
@@ -1521,7 +1517,7 @@ export default function KoditHomePage() {
 
               <div className="flex items-center gap-4 text-[10px] font-mono text-zinc-400 pt-2 border-t border-white/5">
                 <span className="flex items-center gap-1">
-                  <Lock className="w-3 h-3 text-amber-400" />
+                  <Lock className="w-3 h-3 text-blue-400" />
                   NDA Guaranteed
                 </span>
                 <span>•</span>
@@ -1545,67 +1541,67 @@ export default function KoditHomePage() {
             <div className="relative w-7 h-7 flex items-center justify-center">
               <svg
                 viewBox="0 0 32 32"
-                className="w-full h-full drop-shadow-[0_0_8px_rgba(245,158,11,0.6)]"
+                className="w-full h-full drop-shadow-[0_0_8px_rgba(37, 99, 235,0.6)]"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M6 5L12 9V23L6 27V5Z"
-                  stroke="#f59e0b"
+                  stroke="#2563eb"
                   strokeWidth="2"
                   strokeLinejoin="round"
-                  fill="rgba(245, 158, 11, 0.2)"
+                  fill="rgba(37, 99, 235, 0.2)"
                 />
                 <path
                   d="M14 15L23 6L27 9L18 17L27 24L23 27L14 19V15Z"
-                  stroke="#fbbf24"
+                  stroke="#60a5fa"
                   strokeWidth="2"
                   strokeLinejoin="round"
-                  fill="rgba(251, 191, 36, 0.3)"
+                  fill="rgba(96, 165, 250, 0.3)"
                 />
               </svg>
             </div>
-            <span className="font-extrabold text-lg tracking-wider text-amber-400 text-gold-glow">
+            <span className="font-extrabold text-lg tracking-wider text-blue-400 text-blue-glow">
               KODIT
             </span>
           </div>
 
           {/* Center: Footer Links */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-xs font-normal text-zinc-300">
-            <a href="#services" className="hover:text-amber-300 transition-colors">
+            <a href="#services" className="hover:text-blue-300 transition-colors">
               Services
             </a>
-            <span className="text-amber-500/40">|</span>
-            <a href="#devices" className="hover:text-amber-300 transition-colors">
+            <span className="text-blue-600/40">|</span>
+            <a href="#devices" className="hover:text-blue-300 transition-colors">
               Devices &amp; PC
             </a>
-            <span className="text-amber-500/40">|</span>
-            <a href="#workflow" className="hover:text-amber-300 transition-colors">
+            <span className="text-blue-600/40">|</span>
+            <a href="#workflow" className="hover:text-blue-300 transition-colors">
               Portfolio
             </a>
-            <span className="text-amber-500/40">|</span>
-            <a href="#workflow" className="hover:text-amber-300 transition-colors">
+            <span className="text-blue-600/40">|</span>
+            <a href="#workflow" className="hover:text-blue-300 transition-colors">
               Case Studies
             </a>
-            <span className="text-amber-500/40">|</span>
+            <span className="text-blue-600/40">|</span>
             <a
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
                 setModalOpen(true);
               }}
-              className="hover:text-amber-300 transition-colors"
+              className="hover:text-blue-300 transition-colors"
             >
               Contact
             </a>
-            <span className="text-amber-500/40">|</span>
+            <span className="text-blue-600/40">|</span>
             <a
               href="#privacy"
               onClick={(e) => {
                 e.preventDefault();
                 alert("KODIT Privacy Policy: Enterprise-grade data privacy and NDA enforcement guaranteed.");
               }}
-              className="hover:text-amber-300 transition-colors"
+              className="hover:text-blue-300 transition-colors"
             >
               Privacy
             </a>
@@ -1615,14 +1611,14 @@ export default function KoditHomePage() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setModalOpen(true)}
-              className="button-nav-project px-5 py-2 rounded-full text-xs font-medium text-amber-200/90 tracking-wide hover:border-amber-400 transition-all"
+              className="button-nav-project px-5 py-2 rounded-full text-xs font-medium text-blue-200/90 tracking-wide hover:border-blue-400 transition-all"
             >
               Start Project
             </button>
 
             {/* Tiny Golden Status Badge in Bottom-Right Corner */}
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-[10px] font-mono text-zinc-300 shadow-[0_0_10px_rgba(245,158,11,0.15)]">
-              <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#f59e0b] animate-pulse" />
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-600/30 bg-blue-600/10 text-[10px] font-mono text-zinc-300 shadow-[0_0_10px_rgba(37, 99, 235,0.15)]">
+              <span className="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_8px_#2563eb] animate-pulse" />
               <span>Status: All Systems Operational</span>
             </div>
           </div>
@@ -1634,7 +1630,7 @@ export default function KoditHomePage() {
       {/* ========================================================================= */}
       {expandedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/92 backdrop-blur-2xl animate-fadeIn">
-          <div className="relative w-full max-w-5xl card-glass rounded-3xl p-4 sm:p-6 border border-amber-500/40 shadow-2xl flex flex-col max-h-[95vh] overflow-hidden">
+          <div className="relative w-full max-w-5xl card-glass rounded-3xl p-4 sm:p-6 border border-blue-600/40 shadow-2xl flex flex-col max-h-[95vh] overflow-hidden">
             <button
               onClick={() => setExpandedImage(null)}
               className="absolute top-5 right-5 z-20 p-2.5 rounded-full bg-black/70 hover:bg-white/20 text-zinc-300 hover:text-white transition-colors border border-white/10"
@@ -1643,8 +1639,8 @@ export default function KoditHomePage() {
             </button>
 
             <div className="mb-3 pr-12">
-              <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
-                // {expandedImage.category}
+              <span className="text-xs font-mono text-blue-400 uppercase tracking-widest">
+                {"// "}{expandedImage.category}
               </span>
               <h2 className="text-xl sm:text-2xl font-bold text-white mt-0.5">
                 {expandedImage.title}
@@ -1666,7 +1662,7 @@ export default function KoditHomePage() {
 
             <div className="mt-4 pt-3 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
               <div className="flex items-center gap-2 text-zinc-400">
-                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
                 <span>8K Cinematic 3D Render • Studio Rim Lighting</span>
               </div>
 
@@ -1682,7 +1678,7 @@ export default function KoditHomePage() {
                     setExpandedImage(null);
                     setModalOpen(true);
                   }}
-                  className="button-gold text-black font-bold px-6 py-2 rounded-full"
+                  className="button-gold text-white font-bold px-6 py-2 rounded-full"
                 >
                   <span>Build For This Device</span>
                 </button>
@@ -1697,7 +1693,7 @@ export default function KoditHomePage() {
       {/* ========================================================================= */}
       {selectedService && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-xl animate-fadeIn">
-          <div className="relative w-full max-w-lg card-glass rounded-3xl p-6 sm:p-8 border border-amber-500/40 shadow-2xl">
+          <div className="relative w-full max-w-lg card-glass rounded-3xl p-6 sm:p-8 border border-blue-600/40 shadow-2xl">
             <button
               onClick={() => setSelectedService(null)}
               className="absolute top-5 right-5 p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors"
@@ -1706,13 +1702,13 @@ export default function KoditHomePage() {
             </button>
 
             <div>
-              <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
-                // {selectedService.badge}
+              <span className="text-xs font-mono text-blue-400 uppercase tracking-widest">
+                {"// "}{selectedService.badge}
               </span>
               <h2 className="text-2xl font-bold text-white mt-1">
                 {selectedService.title}
               </h2>
-              <p className="text-xs text-amber-300/80 font-mono mt-0.5">
+              <p className="text-xs text-blue-300/80 font-mono mt-0.5">
                 {selectedService.subtitle}
               </p>
               <p className="text-xs sm:text-sm text-zinc-300 mt-4 leading-relaxed font-normal">
@@ -1727,7 +1723,7 @@ export default function KoditHomePage() {
               <div className="grid grid-cols-1 gap-2">
                 {selectedService.features.map((feat, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-slate-200">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                     <span>{feat}</span>
                   </div>
                 ))}
@@ -1742,7 +1738,7 @@ export default function KoditHomePage() {
                 {selectedService.tech.map((t, idx) => (
                   <span
                     key={idx}
-                    className="text-[10px] font-mono px-2.5 py-1 rounded-md bg-white/5 text-amber-300 border border-amber-500/20"
+                    className="text-[10px] font-mono px-2.5 py-1 rounded-md bg-white/5 text-blue-300 border border-blue-600/20"
                   >
                     {t}
                   </span>
@@ -1766,7 +1762,7 @@ export default function KoditHomePage() {
                   setSelectedService(null);
                   setModalOpen(true);
                 }}
-                className="button-gold text-black font-bold px-7 py-2.5 rounded-full text-xs"
+                className="button-gold text-white font-bold px-7 py-2.5 rounded-full text-xs"
               >
                 <span>Initiate This Service</span>
               </button>
@@ -1777,7 +1773,7 @@ export default function KoditHomePage() {
 
       {modalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-xl animate-fadeIn">
-          <div className="relative w-full max-w-lg card-glass rounded-3xl p-6 sm:p-8 border border-amber-500/40 shadow-2xl">
+          <div className="relative w-full max-w-lg card-glass rounded-3xl p-6 sm:p-8 border border-blue-600/40 shadow-2xl">
             <button
               onClick={() => setModalOpen(false)}
               className="absolute top-5 right-5 p-2 rounded-full bg-white/5 hover:bg-white/10 text-zinc-400 hover:text-white transition-colors"
@@ -1787,7 +1783,7 @@ export default function KoditHomePage() {
 
             {formSubmitted ? (
               <div className="py-10 flex flex-col items-center justify-center text-center space-y-3">
-                <CheckCircle2 className="w-12 h-12 text-amber-400" />
+                <CheckCircle2 className="w-12 h-12 text-blue-400" />
                 <h3 className="text-xl font-bold text-white">Inquiry Dispatched</h3>
                 <p className="text-xs text-zinc-300 max-w-xs">
                   Thank you for reaching out. The KODIT technical team will review your project parameters within 4 hours.
@@ -1796,7 +1792,7 @@ export default function KoditHomePage() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <p className="text-xs font-mono text-amber-400 uppercase tracking-widest mb-1">
+                  <p className="text-xs font-mono text-blue-400 uppercase tracking-widest mb-1">
                     KODIT // PROJECT LAUNCH
                   </p>
                   <h2 className="text-2xl font-bold text-white">Let&apos;s Build Together</h2>
@@ -1814,7 +1810,7 @@ export default function KoditHomePage() {
                       placeholder="e.g. John Doe"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-amber-400"
+                      className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-blue-400"
                     />
                   </div>
 
@@ -1826,7 +1822,7 @@ export default function KoditHomePage() {
                       placeholder="john@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-amber-400"
+                      className="w-full px-4 py-2.5 rounded-xl bg-black/60 border border-white/10 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-blue-400"
                     />
                   </div>
 
@@ -1835,7 +1831,7 @@ export default function KoditHomePage() {
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      className="w-full px-3 py-2.5 rounded-xl bg-black/60 border border-white/10 text-xs text-zinc-200 focus:outline-none focus:border-amber-400"
+                      className="w-full px-3 py-2.5 rounded-xl bg-black/60 border border-white/10 text-xs text-zinc-200 focus:outline-none focus:border-blue-400"
                     >
                       <option>Cross-Platform App Development (iOS &amp; Android)</option>
                       <option>Full-Stack Web Development</option>
@@ -1853,14 +1849,14 @@ export default function KoditHomePage() {
                       placeholder="Scope, timeline, and key milestones..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-2 rounded-xl bg-black/60 border border-white/10 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-amber-400 resize-none"
+                      className="w-full px-4 py-2 rounded-xl bg-black/60 border border-white/10 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-blue-400 resize-none"
                     />
                   </div>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl font-bold text-sm button-gold text-black flex items-center justify-center gap-2 mt-2"
+                  className="w-full py-3 rounded-xl font-bold text-sm button-gold text-white flex items-center justify-center gap-2 mt-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>Submit Inquiry</span>
@@ -1882,7 +1878,7 @@ export default function KoditHomePage() {
             </button>
 
             <div className="mb-5">
-              <p className="text-xs font-mono text-amber-400 uppercase tracking-widest">
+              <p className="text-xs font-mono text-blue-400 uppercase tracking-widest">
                 PORTFOLIO SHOWCASE
               </p>
               <h2 className="text-2xl font-bold text-white mt-1">Featured Deployments</h2>
@@ -1908,15 +1904,15 @@ export default function KoditHomePage() {
               ].map((p, i) => (
                 <div
                   key={i}
-                  className="p-4 rounded-xl border border-white/[0.08] bg-black/40 hover:border-amber-400/50 transition-all space-y-1"
+                  className="p-4 rounded-xl border border-white/[0.08] bg-black/40 hover:border-blue-400/50 transition-all space-y-1"
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-bold text-white">{p.title}</h3>
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-600/10 text-blue-300 border border-blue-600/30">
                       LIVE
                     </span>
                   </div>
-                  <p className="text-xs text-amber-400/90 font-mono">{p.category}</p>
+                  <p className="text-xs text-blue-400/90 font-mono">{p.category}</p>
                   <p className="text-xs text-zinc-300">{p.desc}</p>
                 </div>
               ))}
@@ -1928,7 +1924,7 @@ export default function KoditHomePage() {
                   setWorkModalOpen(false);
                   setModalOpen(true);
                 }}
-                className="button-gold text-black font-semibold px-5 py-2 rounded-full text-xs"
+                className="button-gold text-white font-semibold px-5 py-2 rounded-full text-xs"
               >
                 Discuss a Project
               </button>

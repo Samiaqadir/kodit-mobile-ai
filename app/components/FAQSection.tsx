@@ -77,17 +77,17 @@ export default function FAQSection({
   return (
     <section id="faq" className="relative w-full py-16 sm:py-24 px-4 sm:px-8 max-w-5xl mx-auto border-t border-white/5">
       {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-amber-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-600/10 rounded-full blur-[160px] pointer-events-none" />
 
       {/* Header */}
       <div className="relative flex flex-col items-center text-center space-y-3 mb-12 sm:mb-16">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-amber-500/10 border border-amber-500/30 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.2)]">
-          <HelpCircle className="w-3.5 h-3.5 text-amber-400" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-widest uppercase bg-blue-500/10 border border-blue-500/30 text-blue-300 shadow-[0_0_12px_rgba(37,99,235,0.25)]">
+          <HelpCircle className="w-3.5 h-3.5 text-blue-400" />
           <span>Technical Knowledge Base</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
-          FREQUENTLY ASKED: <span className="animate-shimmer-gold">MOBILE & AI QUESTIONS</span>
+          FREQUENTLY ASKED: <span className="animate-shimmer-blue">MOBILE & AI QUESTIONS</span>
         </h2>
 
         <p className="text-sm sm:text-base text-zinc-400 max-w-2xl font-normal leading-relaxed">
@@ -105,8 +105,8 @@ export default function FAQSection({
               <div
                 className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                   isOpen
-                    ? "bg-gradient-to-r from-zinc-950 via-zinc-900/90 to-black border-amber-500/40 shadow-[0_0_25px_rgba(245,158,11,0.15)]"
-                    : "bg-black/60 border-white/10 hover:border-amber-500/25"
+                    ? "bg-gradient-to-r from-zinc-950 via-zinc-900/90 to-black border-blue-500/40 shadow-[0_0_25px_rgba(37,99,235,0.2)]"
+                    : "bg-black/60 border-white/10 hover:border-blue-500/30"
                 }`}
               >
                 <button
@@ -114,10 +114,10 @@ export default function FAQSection({
                   className="w-full p-5 sm:p-6 text-left flex items-start sm:items-center justify-between gap-4 transition-colors"
                 >
                   <div className="space-y-1.5 flex-1">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400/90 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 inline-block">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-blue-400/90 px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 inline-block">
                       {item.category}
                     </span>
-                    <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
+                    <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-blue-300 transition-colors">
                       {item.question}
                     </h3>
                   </div>
@@ -125,12 +125,12 @@ export default function FAQSection({
                   <div
                     className={`w-8 h-8 rounded-full border flex items-center justify-center shrink-0 transition-transform duration-300 ${
                       isOpen
-                        ? "bg-amber-500/20 border-amber-500/50 text-amber-300 rotate-180"
+                        ? "bg-blue-600/20 border-blue-500/50 text-blue-300 rotate-180"
                         : "bg-zinc-900 border-white/10 text-zinc-400"
                     }`}
                   >
                     {isOpen ? (
-                      <Minus className="w-4 h-4 text-amber-400" />
+                      <Minus className="w-4 h-4 text-blue-400" />
                     ) : (
                       <Plus className="w-4 h-4 text-zinc-300" />
                     )}
@@ -143,8 +143,8 @@ export default function FAQSection({
                       {item.answer}
                     </p>
                     <div className="flex items-center gap-2 pt-1">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                      <span className="text-xs font-mono text-amber-300">
+                      <Sparkles className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                      <span className="text-xs font-mono text-blue-300">
                         {item.highlight}
                       </span>
                     </div>
@@ -157,7 +157,7 @@ export default function FAQSection({
       </div>
 
       {/* Direct Contact Banner */}
-      <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-amber-500/10 via-black to-zinc-950 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+      <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-blue-900/20 via-black to-zinc-950 border border-blue-500/35 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
         <div className="space-y-1">
           <h4 className="text-lg font-bold text-white">
             Have a custom mobile or AI architectural requirement?
@@ -169,9 +169,9 @@ export default function FAQSection({
 
         <button
           onClick={onOpenConsultation}
-          className="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-300 text-black font-semibold text-xs tracking-wider uppercase hover:shadow-[0_0_20px_rgba(245,158,11,0.35)] transition-all shrink-0 flex items-center gap-2"
+          className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white font-semibold text-xs tracking-wider uppercase hover:shadow-[0_0_25px_rgba(37,99,235,0.5)] transition-all shrink-0 flex items-center gap-2 shadow-lg"
         >
-          <Zap className="w-3.5 h-3.5 fill-black" />
+          <Zap className="w-3.5 h-3.5 fill-white" />
           <span>Talk to an AI & Mobile Architect</span>
         </button>
       </div>
