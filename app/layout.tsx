@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "KODIT Studio",
     images: [
       {
-        url: "/kodit-exact-bg.jpg",
+        url: "/kodit-hero-cyan.jpg",
         width: 1200,
         height: 630,
         alt: "KODIT — Mobile App & AI Services Studio",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "KODIT — Enterprise Mobile App & AI Services Studio",
     description:
       "High-velocity Native iOS & Android apps, autonomous AI agent swarms, and on-device neural intelligence.",
-    images: ["/kodit-exact-bg.jpg"],
+    images: ["/kodit-hero-cyan.jpg"],
     creator: "@kodit_ai",
   },
   icons: {
