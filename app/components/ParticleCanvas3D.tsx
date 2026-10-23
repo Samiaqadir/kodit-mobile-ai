@@ -51,7 +51,7 @@ export default function ParticleCanvas3D() {
         vz: (Math.random() - 0.5) * 0.5,
         size: Math.random() * 2.2 + 0.8,
         baseAlpha: Math.random() * 0.6 + 0.2,
-        hue: Math.random() > 0.4 ? 218 : 224, // dark/royal blue hues
+        hue: Math.random() > 0.4 ? 188 : 215, // electric cyan (188) & laser blue (215)
       });
     }
 
@@ -133,7 +133,7 @@ export default function ParticleCanvas3D() {
           ctx.arc(screenX, screenY, projectedSize, 0, Math.PI * 2);
           ctx.fillStyle = `hsla(${p.hue}, 95%, 55%, ${alpha})`;
           ctx.shadowBlur = 8 * depth;
-          ctx.shadowColor = "rgba(59, 130, 246, 0.85)";
+          ctx.shadowColor = "rgba(6, 182, 212, 0.9)";
           ctx.fill();
           ctx.shadowBlur = 0;
         }
@@ -150,11 +150,11 @@ export default function ParticleCanvas3D() {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < 110) {
-            const lineAlpha = (1 - dist / 110) * 0.15 * Math.min(p1.alpha, p2.alpha);
+            const lineAlpha = (1 - dist / 110) * 0.2 * Math.min(p1.alpha, p2.alpha);
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(59, 130, 246, ${lineAlpha})`;
+            ctx.strokeStyle = `rgba(6, 182, 212, ${lineAlpha})`;
             ctx.stroke();
           }
         }
