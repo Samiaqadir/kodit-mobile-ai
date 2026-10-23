@@ -325,7 +325,7 @@ export default function KoditHomePage() {
           {/* Background 3D Octane Visual Asset */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/kodit-exact-bg.jpg"
+              src="/kodit-hero-cyan.jpg"
               alt="KODIT 3D Biomechanical Android Artwork"
               fill
               priority
@@ -790,7 +790,7 @@ export default function KoditHomePage() {
                       {/* Device Visual Thumbnail */}
                       <div 
                         onClick={() => setExpandedImage({
-                          src: "/kodit-mobile-phones.jpg",
+                          src: "/kodit-mobile-cyan.jpg",
                           title: "KODIT Native Mobile Platforms (iOS & Android)",
                           desc: "High-performance native mobile apps running with sub-16ms render times, Biometric Enclave security, and offline AI execution.",
                           category: "MOBILE HARDWARE SHOWCASE"
@@ -798,7 +798,7 @@ export default function KoditHomePage() {
                         className="relative h-32 w-full rounded-2xl overflow-hidden border border-blue-600/30 group/img cursor-pointer"
                       >
                         <Image
-                          src="/kodit-mobile-phones.jpg"
+                          src="/kodit-mobile-cyan.jpg"
                           alt="KODIT Mobile 3D Smartphones"
                           fill
                           sizes="(max-width: 768px) 100vw, 380px"
@@ -847,7 +847,7 @@ export default function KoditHomePage() {
                       {/* PC Workstation Visual Thumbnail */}
                       <div 
                         onClick={() => setExpandedImage({
-                          src: "/kodit-pc-workstation.jpg",
+                          src: "/kodit-pc-cyan.jpg",
                           title: "KODIT Full-Stack PC & Cloud Workstation",
                           desc: "Dual 4K workstation architecture with serverless microservice diagrams, glowing code topologies, and distributed cloud computing.",
                           category: "ENTERPRISE PC WORKSTATION"
@@ -855,7 +855,7 @@ export default function KoditHomePage() {
                         className="relative h-32 w-full rounded-2xl overflow-hidden border border-blue-600/30 group/img cursor-pointer"
                       >
                         <Image
-                          src="/kodit-pc-workstation.jpg"
+                          src="/kodit-pc-cyan.jpg"
                           alt="KODIT PC Workstation"
                           fill
                           sizes="(max-width: 768px) 100vw, 380px"
@@ -904,7 +904,7 @@ export default function KoditHomePage() {
                       {/* 3D AI Neural Core Visual Thumbnail */}
                       <div 
                         onClick={() => setExpandedImage({
-                          src: "/kodit-ai-core.jpg",
+                          src: "/kodit-ai-core-cyan.jpg",
                           title: "KODIT 3D AI Neural Core & Agent Matrix",
                           desc: "Autonomous multi-agent orchestration core, vector embeddings, and real-time multi-modal LLM reasoning pipelines glowing with dark blue synaptic energy.",
                           category: "3D ARTIFICIAL INTELLIGENCE CORE"
@@ -912,7 +912,7 @@ export default function KoditHomePage() {
                         className="relative h-32 w-full rounded-2xl overflow-hidden border border-blue-600/30 group/img cursor-pointer"
                       >
                         <Image
-                          src="/kodit-ai-core.jpg"
+                          src="/kodit-ai-core-cyan.jpg"
                           alt="KODIT 3D AI Neural Core"
                           fill
                           sizes="(max-width: 768px) 100vw, 380px"
@@ -1122,7 +1122,7 @@ export default function KoditHomePage() {
           <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden group cursor-pointer">
             {activeDeviceTab === "suite" && (
               <Image
-                src="/kodit-devices-suite.jpg"
+                src="/kodit-devices-cyan.jpg"
                 alt="KODIT Cross-Platform Devices Suite (Curved PC, Laptop, Smartphone)"
                 fill
                 priority
@@ -1132,7 +1132,7 @@ export default function KoditHomePage() {
             )}
             {activeDeviceTab === "mobile" && (
               <Image
-                src="/kodit-mobile-phones.jpg"
+                src="/kodit-mobile-cyan.jpg"
                 alt="KODIT 3D Mobile Smartphones with Biometric & AI workflows"
                 fill
                 priority
@@ -1142,7 +1142,7 @@ export default function KoditHomePage() {
             )}
             {activeDeviceTab === "pc" && (
               <Image
-                src="/kodit-pc-workstation.jpg"
+                src="/kodit-pc-cyan.jpg"
                 alt="KODIT Enterprise Developer PC Workstation and Laptop"
                 fill
                 priority
@@ -1169,21 +1169,21 @@ export default function KoditHomePage() {
                 onClick={() => {
                   if (activeDeviceTab === "suite") {
                     setExpandedImage({
-                      src: "/kodit-devices-suite.jpg",
+                      src: "/kodit-devices-cyan.jpg",
                       title: "KODIT Unified Device Suite",
                       desc: "Complete cross-platform ecosystem featuring curved 4K PC desktop monitor, ultra-thin dark titanium laptop, and floating bezel-less smartphone running KODIT enterprise telemetry.",
                       category: "FULL ECOSYSTEM SHOWCASE",
                     });
                   } else if (activeDeviceTab === "mobile") {
                     setExpandedImage({
-                      src: "/kodit-mobile-phones.jpg",
+                      src: "/kodit-mobile-cyan.jpg",
                       title: "KODIT Native Mobile Handhelds",
                       desc: "Dual titanium smartphones displaying biometric authentication, real-time market overviews, and autonomous AI task runners with sub-16ms latency.",
                       category: "MOBILE SPECIFICATIONS",
                     });
                   } else {
                     setExpandedImage({
-                      src: "/kodit-pc-workstation.jpg",
+                      src: "/kodit-pc-cyan.jpg",
                       title: "KODIT Enterprise PC Workstation",
                       desc: "Dual 4K floating monitor setup on minimalist obsidian desk showing full-stack microservices architecture, serverless pipelines, and real-time code topologies.",
                       category: "WORKSTATION TOPOLOGY",

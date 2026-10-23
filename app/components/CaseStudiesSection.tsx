@@ -37,7 +37,7 @@ const caseStudies: CaseStudy[] = [
     title: "ApexFin Global Banking App",
     subtitle: "Native iOS & Android banking engine with CoreML on-device fraud detection.",
     client: "ApexFin Capital Ltd.",
-    image: "/kodit-mobile-phones.jpg",
+    image: "/kodit-mobile-cyan.jpg",
     metrics: [
       { label: "App Store Rating", value: "4.9 ★" },
       { label: "Active Mobile Users", value: "1.4M+" },
@@ -60,7 +60,7 @@ const caseStudies: CaseStudy[] = [
     title: "PulseAI Vital Monitor",
     subtitle: "Cross-platform Flutter health app measuring vitals via smartphone camera sensor.",
     client: "Pulse BioHealth Systems",
-    image: "/kodit-devices-suite.jpg",
+    image: "/kodit-devices-cyan.jpg",
     metrics: [
       { label: "Clinical Precision", value: "99.2%" },
       { label: "Camera Frame Rate", value: "60 FPS" },
@@ -83,7 +83,7 @@ const caseStudies: CaseStudy[] = [
     title: "OmniAgent Logistics Swarm",
     subtitle: "Enterprise multi-agent autonomous system orchestrating global freight fleets.",
     client: "OmniGlobal Freight",
-    image: "/kodit-ai-core.jpg",
+    image: "/kodit-ai-core-cyan.jpg",
     metrics: [
       { label: "Route Cost Reduction", value: "42%" },
       { label: "Autonomous Dispatches", value: "2,800/hr" },

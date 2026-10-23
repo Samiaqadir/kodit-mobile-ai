@@ -18,7 +18,7 @@ const MODELS: ModelItem[] = [
     id: "ai-core",
     name: "Autonomous AI Neural Core // Gen-IV",
     category: "3D NEURAL HARDWARE",
-    src: "/kodit-ai-core.jpg",
+    src: "/kodit-ai-core-cyan.jpg",
     tagline: "Spherical sapphire cybernetic processor with multi-modal LLM reasoning and real-time vector embeddings.",
     specs: [
       { label: "Core Topology", value: "Multi-Modal Agent Nexus" },
@@ -31,7 +31,7 @@ const MODELS: ModelItem[] = [
     id: "mobile",
     name: "Titanium Handheld Ecosystem",
     category: "3D MOBILE ARCHITECTURE",
-    src: "/kodit-mobile-phones.jpg",
+    src: "/kodit-mobile-cyan.jpg",
     tagline: "Dual bezel-less titanium smartphones running 60 FPS native shaders and Biometric Secure Enclave.",
     specs: [
       { label: "Display Rate", value: "120Hz ProMotion Shaders" },
@@ -44,7 +44,7 @@ const MODELS: ModelItem[] = [
     id: "workstation",
     name: "Enterprise 4K PC Workstation",
     category: "3D WORKSTATION TOPOLOGY",
-    src: "/kodit-pc-workstation.jpg",
+    src: "/kodit-pc-cyan.jpg",
     tagline: "Floating 4K ultrawide monitor setup on minimalist obsidian desk with serverless microservice diagrams.",
     specs: [
       { label: "Resolution", value: "Dual 4K HDR Canvas" },
@@ -57,7 +57,7 @@ const MODELS: ModelItem[] = [
     id: "suite",
     name: "Cross-Platform Hardware Suite",
     category: "UNIFIED ECOSYSTEM",
-    src: "/kodit-devices-suite.jpg",
+    src: "/kodit-devices-cyan.jpg",
     tagline: "Synchronized real-time telemetry across desktop PC, field titanium laptop, and mobile handheld.",
     specs: [
       { label: "Platforms", value: "macOS • Windows • iOS • Android" },
